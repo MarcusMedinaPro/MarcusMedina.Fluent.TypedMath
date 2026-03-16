@@ -3,6 +3,8 @@ using MarcusMedina.Fluent.TypedMath;
 // Physics calculations using TypedMath
 // Demonstrates type-safe scientific computations
 
+Console.OutputEncoding = System.Text.Encoding.UTF8; // Enable emoji support
+
 Console.WriteLine("=== Physics Calculator ===\n");
 
 // Example 1: Motion calculations

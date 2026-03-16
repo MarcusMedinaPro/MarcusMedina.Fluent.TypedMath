@@ -2,6 +2,8 @@ using MarcusMedina.Fluent.TypedMath;
 
 // Unit conversion utility using TypedMath
 
+Console.OutputEncoding = System.Text.Encoding.UTF8; // Enable emoji support
+
 Console.WriteLine("=== Comprehensive Unit Converter ===\n");
 
 // Distance conversions

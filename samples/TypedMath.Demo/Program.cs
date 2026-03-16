@@ -1,8 +1,7 @@
-using System.Text;
 using MarcusMedinaPro.TypedMath.DecimalExtension;
 using MarcusMedinaPro.TypedMath.IntExtension;
 
-Console.OutputEncoding = Encoding.UTF8;
+Console.OutputEncoding = System.Text.Encoding.UTF8; // Enable emoji support
 
 var marketingBudget = 1_250m
     .Add(325m)      // add agency fee

@@ -2,6 +2,8 @@ using MarcusMedina.Fluent.TypedMath;
 
 // Engineering problem solver using TypedMath
 
+Console.OutputEncoding = System.Text.Encoding.UTF8; // Enable emoji support
+
 Console.WriteLine("=== Engineering Problem Solver ===\n");
 
 // Problem 1: Material strength

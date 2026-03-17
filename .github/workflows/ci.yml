@@ -26,15 +26,14 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore dependencies
-        run: dotnet restore csharp
+        run: dotnet restore csharp/TypedMath.slnx
 
       - name: Build
-        run: dotnet build csharp --configuration Release --no-restore
+        run: dotnet build csharp/TypedMath.slnx --configuration Release --no-restore
 
       - name: Test
         run: |
-          dotnet test \
-            csharp \
+          dotnet test csharp/TypedMath.slnx \
             --configuration Release \
             --no-build \
             --verbosity normal

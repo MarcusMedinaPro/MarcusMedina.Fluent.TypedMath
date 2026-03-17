@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="../samples/TypedMath.Demo/TypedMath.Demo.csproj" />
+  </Folder>
+  <Project Path="src/TypedMath.Tests/TypedMath.Tests.csproj" />
+  <Project Path="src/TypedMath/TypedMath.csproj" />
+</Solution>

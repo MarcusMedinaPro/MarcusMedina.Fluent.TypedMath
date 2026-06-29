@@ -4,6 +4,7 @@ on:
   push:
     tags: ["v*"]
     branches: [release, main]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -91,58 +92,35 @@ jobs:
 
   package-signing:
     needs: quality-gate
-    runs-on: [self-hosted, Signer]
+    runs-on: ubuntu-latest
     name: 3️⃣ Package Signing
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 10.0.x
-
       - name: Download unsigned packages
         uses: actions/download-artifact@v4
         with:
           name: unsigned-packages
           path: ./unsigned
 
-      - name: Sign packages
-        shell: cmd
-        run: |
-          for %%f in (./unsigned/*.nupkg) do (
-            echo Signing: %%f
-            dotnet nuget sign "./unsigned/%%f" ^
-              --certificate-store-name My ^
-              --certificate-store-location CurrentUser ^
-              --certificate-subject-name "Open Source Developer, Marcus Ackre Medina" ^
-              --timestamper http://time.certum.pl
-          )
+      - name: Install cosign
+        uses: sigstore/cosign-installer@v3
 
-      - name: Verify signatures
-        shell: cmd
+      - name: Sign packages
         run: |
-          echo Verifying signatures...
-          for %%f in (./unsigned/*.nupkg) do (
-            echo Verifying: %%f
-            dotnet nuget verify "./unsigned/%%f"
-            if errorlevel 1 (
-              echo ERROR: Verification failed for %%f
-              exit /b 1
-            )
-          )
+          for pkg in ./unsigned/*.nupkg; do
+            cosign sign-blob "$pkg" \
+              --bundle "${pkg}.sigstore.json" \
+              --yes
+          done
 
       - name: Generate SHA256 checksums
-        shell: pwsh
         run: |
           cd unsigned
-          $files = Get-ChildItem *.nupkg
-          $files | ForEach-Object {
-            $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash
-            "$hash  $($_.Name)"
-          } | Out-File SHA256SUMS.txt
-          Get-Content SHA256SUMS.txt
+          sha256sum *.nupkg > SHA256SUMS.txt
+          cat SHA256SUMS.txt
 
       - name: Upload signed packages
         uses: actions/upload-artifact@v4
@@ -150,6 +128,7 @@ jobs:
           name: signed-packages
           path: |
             ./unsigned/*.nupkg
+            ./unsigned/*.sigstore.json
             ./unsigned/SHA256SUMS.txt
 
   publish-nuget:
@@ -184,7 +163,8 @@ jobs:
         with:
           files: |
             ./packages/*.nupkg
+            ./packages/*.sigstore.json
             ./packages/SHA256SUMS.txt
           generate_release_notes: true
           draft: false
-          prerelease: false
+          prerelease: ${{ contains(github.ref_name, '-alpha') || contains(github.ref_name, '-beta') || contains(github.ref_name, '-rc') }}

@@ -40,6 +40,10 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
+	  <None Include="..\..\..\assets\open-source.svg">
+	    <Pack>True</Pack>
+	    <PackagePath>assets\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 	<ItemGroup>

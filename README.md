@@ -1,4 +1,4 @@
-# TypedMath
+# MarcusMedina.Fluent.TypedMath
 
 [![NuGet](https://img.shields.io/nuget/v/MarcusMedina.Fluent.TypedMath.svg?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/MarcusMedina.Fluent.TypedMath/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/MarcusMedina.Fluent.TypedMath.svg?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/MarcusMedina.Fluent.TypedMath/)
@@ -6,7 +6,7 @@
 [![.NET](https://img.shields.io/badge/.NET-10.0+-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 ![Open Source](assets/open-source.svg)
-[![Build](https://img.shields.io/github/actions/workflow/status/MarcusMedinaPro/TypedMath/release.yml?branch=main&label=Build&style=for-the-badge&logo=github)](https://github.com/MarcusMedinaPro/TypedMath/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/release.yml?branch=main&label=Build&style=for-the-badge&logo=github)](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/actions)
 [![Signed](https://img.shields.io/badge/Signed-Sigstore-green?style=for-the-badge&logo=linux)](https://docs.sigstore.dev)
 
 

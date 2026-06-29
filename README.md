@@ -31,9 +31,9 @@ dotnet add package MarcusMedina.Fluent.TypedMath
 
 ## 📖 Documentation
 
-- [Getting Started Guide](./csharp/Manual/GettingStarted.md)
-- [Complete Manual](./csharp/Manual/README.md)
-- [API Reference](./csharp/Manual/API.md)
+- [Getting Started Guide](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/blob/main/csharp/Manual/GettingStarted.md)
+- [Complete Manual](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/blob/main/csharp/Manual/README.md)
+- [API Reference](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/blob/main/csharp/Manual/API.md)
 
 ---
 
@@ -47,7 +47,7 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 All releases are signed with [cosign](https://docs.sigstore.dev) (Sigstore keyless signing).
 
-To verify a downloaded package, download both the `.nupkg` and its `.sigstore.json` bundle from the [GitHub Release](../../releases), then run:
+To verify a downloaded package, download both the `.nupkg` and its `.sigstore.json` bundle from the [GitHub Release](../https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/releases), then run:
 
 ```bash
 cosign verify-blob <package.nupkg> \

@@ -897,7 +897,7 @@ public static class TypedMathUlongExtension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this ulong x) => x < 0;
+    public static bool IsNegative(this ulong x) => false;
 
     /// <summary>
     /// Checks if ulong does not equal byte

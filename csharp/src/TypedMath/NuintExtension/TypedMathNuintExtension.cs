@@ -970,7 +970,7 @@ public static class TypedMathNuintExtension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this nuint x) => x < 0;
+    public static bool IsNegative(this nuint x) => false;
 
     /// <summary>
     /// Checks if nuint does not equal byte

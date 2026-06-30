@@ -897,7 +897,7 @@ public static class TypedMathCharExtension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this char x) => x < 0;
+    public static bool IsNegative(this char x) => false;
 
     /// <summary>
     /// Checks if char does not equal byte

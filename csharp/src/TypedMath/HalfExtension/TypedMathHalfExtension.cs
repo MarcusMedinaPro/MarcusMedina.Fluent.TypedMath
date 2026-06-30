@@ -152,7 +152,7 @@ public static class TypedMathHalfExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Half x, decimal other) => x == (Half)other;
+    public static bool IsEqualTo(this Half x, decimal other) => Math.Abs((float)x - (float)(Half)other) < 1e-3f;
 
     /// <summary>
     /// Checks if Half equals Half
@@ -160,7 +160,7 @@ public static class TypedMathHalfExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Half x, Half other) => x == other;
+    public static bool IsEqualTo(this Half x, Half other) => Math.Abs((float)x - (float)other) < 1e-3f;
 
     /// <summary>
     /// Gets boolean true if Half is less than zero
@@ -175,7 +175,7 @@ public static class TypedMathHalfExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Half x, decimal other) => x != (Half)other;
+    public static bool IsNotEqualTo(this Half x, decimal other) => Math.Abs((float)x - (float)(Half)other) >= 1e-3f;
 
     /// <summary>
     /// Checks if Half does not equal Half
@@ -183,7 +183,7 @@ public static class TypedMathHalfExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Half x, Half other) => x != other;
+    public static bool IsNotEqualTo(this Half x, Half other) => Math.Abs((float)x - (float)other) >= 1e-3f;
 
     /// <summary>
     /// Gets boolean true if Half is more than zero

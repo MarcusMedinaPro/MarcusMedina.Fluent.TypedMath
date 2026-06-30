@@ -897,7 +897,7 @@ public static class TypedMathUshortExtension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this ushort x) => x < 0;
+    public static bool IsNegative(this ushort x) => false;
 
     /// <summary>
     /// Checks if ushort does not equal byte

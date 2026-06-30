@@ -897,7 +897,7 @@ public static class TypedMathByteExtension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this byte x) => x < 0;
+    public static bool IsNegative(this byte x) => false;
 
     /// <summary>
     /// Checks if byte does not equal byte

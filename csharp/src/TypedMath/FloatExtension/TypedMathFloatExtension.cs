@@ -15,6 +15,7 @@ using System.Linq;
 /// </summary>
 public static class TypedMathFloatExtension
 {
+    private const float Epsilon = 1e-6f;
 
     /// <summary>
     /// Adds byte to float
@@ -802,7 +803,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, byte other) => x == (float)other;
+    public static bool IsEqualTo(this float x, byte other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals char
@@ -810,7 +811,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, char other) => x == (float)other;
+    public static bool IsEqualTo(this float x, char other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals decimal
@@ -818,7 +819,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, decimal other) => x == (float)other;
+    public static bool IsEqualTo(this float x, decimal other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals double
@@ -826,7 +827,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, double other) => x == (float)other;
+    public static bool IsEqualTo(this float x, double other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals float
@@ -834,7 +835,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, float other) => x == other;
+    public static bool IsEqualTo(this float x, float other) => MathF.Abs(x - other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals int
@@ -842,7 +843,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, int other) => x == (float)other;
+    public static bool IsEqualTo(this float x, int other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals long
@@ -850,7 +851,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, long other) => x == (float)other;
+    public static bool IsEqualTo(this float x, long other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals sbyte
@@ -858,7 +859,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, sbyte other) => x == (float)other;
+    public static bool IsEqualTo(this float x, sbyte other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals short
@@ -866,7 +867,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, short other) => x == (float)other;
+    public static bool IsEqualTo(this float x, short other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals uint
@@ -874,7 +875,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, uint other) => x == (float)other;
+    public static bool IsEqualTo(this float x, uint other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals ulong
@@ -882,7 +883,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, ulong other) => x == (float)other;
+    public static bool IsEqualTo(this float x, ulong other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Checks if float equals ushort
@@ -890,7 +891,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this float x, ushort other) => x == (float)other;
+    public static bool IsEqualTo(this float x, ushort other) => MathF.Abs(x - (float)other) < Epsilon;
 
     /// <summary>
     /// Gets boolean true if float is less than zero
@@ -905,7 +906,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, byte other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, byte other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal char
@@ -913,7 +914,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, char other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, char other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal decimal
@@ -921,7 +922,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, decimal other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, decimal other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal double
@@ -929,7 +930,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, double other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, double other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal float
@@ -937,7 +938,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, float other) => x != other;
+    public static bool IsNotEqualTo(this float x, float other) => MathF.Abs(x - other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal int
@@ -945,7 +946,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, int other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, int other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal long
@@ -953,7 +954,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, long other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, long other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal sbyte
@@ -961,7 +962,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, sbyte other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, sbyte other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal short
@@ -969,7 +970,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, short other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, short other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal uint
@@ -977,7 +978,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, uint other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, uint other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal ulong
@@ -985,7 +986,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, ulong other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, ulong other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Checks if float does not equal ushort
@@ -993,7 +994,7 @@ public static class TypedMathFloatExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this float x, ushort other) => x != (float)other;
+    public static bool IsNotEqualTo(this float x, ushort other) => MathF.Abs(x - (float)other) >= Epsilon;
 
     /// <summary>
     /// Gets boolean true if float is more than zero

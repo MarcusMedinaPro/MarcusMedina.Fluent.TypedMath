@@ -751,7 +751,7 @@ public static class TypedMathUInt128Extension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this UInt128 x) => x < 0;
+    public static bool IsNegative(this UInt128 x) => false;
 
     /// <summary>
     /// Checks if UInt128 does not equal byte

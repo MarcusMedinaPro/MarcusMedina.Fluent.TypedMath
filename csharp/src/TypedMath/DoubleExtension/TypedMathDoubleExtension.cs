@@ -15,6 +15,7 @@ using System.Linq;
 /// </summary>
 public static class TypedMathDoubleExtension
 {
+    private const double Epsilon = 1e-10;
 
     /// <summary>
     /// Adds byte to double
@@ -802,7 +803,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, byte other) => x == (double)other;
+    public static bool IsEqualTo(this double x, byte other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals char
@@ -810,7 +811,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, char other) => x == (double)other;
+    public static bool IsEqualTo(this double x, char other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals decimal
@@ -818,7 +819,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, decimal other) => x == (double)other;
+    public static bool IsEqualTo(this double x, decimal other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals double
@@ -826,7 +827,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, double other) => x == other;
+    public static bool IsEqualTo(this double x, double other) => Math.Abs(x - other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals float
@@ -834,7 +835,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, float other) => x == (double)other;
+    public static bool IsEqualTo(this double x, float other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals int
@@ -842,7 +843,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, int other) => x == (double)other;
+    public static bool IsEqualTo(this double x, int other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals long
@@ -850,7 +851,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, long other) => x == (double)other;
+    public static bool IsEqualTo(this double x, long other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals sbyte
@@ -858,7 +859,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, sbyte other) => x == (double)other;
+    public static bool IsEqualTo(this double x, sbyte other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals short
@@ -866,7 +867,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, short other) => x == (double)other;
+    public static bool IsEqualTo(this double x, short other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals uint
@@ -874,7 +875,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, uint other) => x == (double)other;
+    public static bool IsEqualTo(this double x, uint other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals ulong
@@ -882,7 +883,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, ulong other) => x == (double)other;
+    public static bool IsEqualTo(this double x, ulong other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Checks if double equals ushort
@@ -890,7 +891,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this double x, ushort other) => x == (double)other;
+    public static bool IsEqualTo(this double x, ushort other) => Math.Abs(x - (double)other) < Epsilon;
 
     /// <summary>
     /// Gets boolean true if double is less than zero
@@ -905,7 +906,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, byte other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, byte other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal char
@@ -913,7 +914,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, char other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, char other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal decimal
@@ -921,7 +922,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, decimal other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, decimal other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal double
@@ -929,7 +930,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, double other) => x != other;
+    public static bool IsNotEqualTo(this double x, double other) => Math.Abs(x - other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal float
@@ -937,7 +938,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, float other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, float other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal int
@@ -945,7 +946,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, int other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, int other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal long
@@ -953,7 +954,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, long other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, long other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal sbyte
@@ -961,7 +962,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, sbyte other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, sbyte other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal short
@@ -969,7 +970,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, short other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, short other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal uint
@@ -977,7 +978,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, uint other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, uint other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal ulong
@@ -985,7 +986,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, ulong other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, ulong other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Checks if double does not equal ushort
@@ -993,7 +994,7 @@ public static class TypedMathDoubleExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this double x, ushort other) => x != (double)other;
+    public static bool IsNotEqualTo(this double x, ushort other) => Math.Abs(x - (double)other) >= Epsilon;
 
     /// <summary>
     /// Gets boolean true if double is more than zero

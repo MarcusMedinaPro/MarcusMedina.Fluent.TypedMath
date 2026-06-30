@@ -897,7 +897,7 @@ public static class TypedMathUintExtension
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this uint x) => x < 0;
+    public static bool IsNegative(this uint x) => false;
 
     /// <summary>
     /// Checks if uint does not equal byte

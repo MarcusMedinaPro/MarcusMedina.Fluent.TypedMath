@@ -1,9 +1,11 @@
-﻿// ----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathLongExtension.cs" company="MarcusMedinaPro">
 //     By Marcus Medina, 2019 - http://MarcusMedina.Pro This file is subject to the terms and
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
+
+using MarcusMedinaPro.TypedMath.Core;
 
 namespace MarcusMedinaPro.TypedMath.LongExtension;
 
@@ -22,7 +24,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, byte addend) => x + (long)addend;
+    public static long Add(this long x, byte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds char to long
@@ -30,7 +32,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, char addend) => x + (long)addend;
+    public static long Add(this long x, char addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds decimal to long
@@ -38,7 +40,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, decimal addend) => x + (long)addend;
+    public static long Add(this long x, decimal addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds double to long
@@ -46,7 +48,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, double addend) => x + (long)addend;
+    public static long Add(this long x, double addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds float to long
@@ -54,7 +56,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, float addend) => x + (long)addend;
+    public static long Add(this long x, float addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds int to long
@@ -62,7 +64,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, int addend) => x + (long)addend;
+    public static long Add(this long x, int addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds long to long
@@ -70,7 +72,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, long addend) => x + addend;
+    public static long Add(this long x, long addend) => TypedMathCore.Add(x, addend);
 
     /// <summary>
     /// Adds sbyte to long
@@ -78,7 +80,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, sbyte addend) => x + (long)addend;
+    public static long Add(this long x, sbyte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds short to long
@@ -86,7 +88,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, short addend) => x + (long)addend;
+    public static long Add(this long x, short addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds uint to long
@@ -94,7 +96,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, uint addend) => x + (long)addend;
+    public static long Add(this long x, uint addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ulong to long
@@ -102,7 +104,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, ulong addend) => x + (long)addend;
+    public static long Add(this long x, ulong addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ushort to long
@@ -110,7 +112,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static long Add(this long x, ushort addend) => x + (long)addend;
+    public static long Add(this long x, ushort addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds percentage to long
@@ -118,7 +120,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, byte percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, byte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -126,7 +128,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, char percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, char percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -134,7 +136,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, decimal percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, decimal percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -142,7 +144,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, double percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, double percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -150,7 +152,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, float percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, float percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -158,7 +160,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, int percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, int percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -166,7 +168,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, long percent) => x + (x * percent / 100);
+    public static long AddPercent(this long x, long percent) => TypedMathCore.AddPercent(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -174,7 +176,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, sbyte percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, sbyte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -182,7 +184,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, short percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, short percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -190,7 +192,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, uint percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, uint percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -198,7 +200,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, ulong percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, ulong percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to long
@@ -206,7 +208,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static long AddPercent(this long x, ushort percent) => x + (x * (long)percent / 100);
+    public static long AddPercent(this long x, ushort percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Returns long if higher than byte, otherwise byte
@@ -214,7 +216,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, byte other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, byte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than char, otherwise char
@@ -222,7 +224,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, char other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, char other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than decimal, otherwise decimal
@@ -230,7 +232,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, decimal other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, decimal other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than double, otherwise double
@@ -238,7 +240,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, double other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, double other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than float, otherwise float
@@ -246,7 +248,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, float other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, float other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than int, otherwise int
@@ -254,7 +256,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, int other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, int other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than long, otherwise long
@@ -262,7 +264,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, long other) => x > other ? x : other;
+    public static long ChooseIfHigher(this long x, long other) => TypedMathCore.ChooseIfHigher(x, other);
 
     /// <summary>
     /// Returns long if higher than sbyte, otherwise sbyte
@@ -270,7 +272,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, sbyte other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, sbyte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than short, otherwise short
@@ -278,7 +280,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, short other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, short other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than uint, otherwise uint
@@ -286,7 +288,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, uint other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, uint other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than ulong, otherwise ulong
@@ -294,7 +296,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, ulong other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, ulong other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if higher than ushort, otherwise ushort
@@ -302,7 +304,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static long ChooseIfHigher(this long x, ushort other) => x > (long)other ? x : (long)other;
+    public static long ChooseIfHigher(this long x, ushort other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns long if lower than byte, otherwise byte
@@ -310,7 +312,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, byte other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, byte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than char, otherwise char
@@ -318,7 +320,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, char other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, char other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than decimal, otherwise decimal
@@ -326,7 +328,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, decimal other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, decimal other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than double, otherwise double
@@ -334,7 +336,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, double other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, double other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than float, otherwise float
@@ -342,7 +344,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, float other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, float other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than int, otherwise int
@@ -350,7 +352,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, int other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, int other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than long, otherwise long
@@ -358,7 +360,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, long other) => x < other ? x : other;
+    public static long ChooseIfLower(this long x, long other) => TypedMathCore.ChooseIfLower(x, other);
 
     /// <summary>
     /// Returns long if lower than sbyte, otherwise sbyte
@@ -366,7 +368,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, sbyte other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, sbyte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than short, otherwise short
@@ -374,7 +376,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, short other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, short other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than uint, otherwise uint
@@ -382,7 +384,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, uint other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, uint other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than ulong, otherwise ulong
@@ -390,7 +392,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, ulong other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, ulong other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns long if lower than ushort, otherwise ushort
@@ -398,7 +400,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static long ChooseIfLower(this long x, ushort other) => x < (long)other ? x : (long)other;
+    public static long ChooseIfLower(this long x, ushort other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and byte
@@ -407,7 +409,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, byte other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and char
@@ -416,7 +418,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, char other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and decimal
@@ -425,7 +427,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, decimal other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, decimal other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and double
@@ -434,7 +436,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, double other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, double other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and float
@@ -443,7 +445,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, float other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, float other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and int
@@ -452,7 +454,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, int other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and long
@@ -461,7 +463,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, long other) => x > other ? x - other : x < other ? other - x : 0;
+    public static long DiferenceFrom(this long x, long other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and sbyte
@@ -470,7 +472,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, sbyte other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and short
@@ -479,7 +481,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, short other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and uint
@@ -488,7 +490,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, uint other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, uint other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and ulong
@@ -497,7 +499,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, ulong other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and ushort
@@ -506,7 +508,7 @@ public static class TypedMathLongExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static long DiferenceFrom(this long x, ushort other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DiferenceFrom(this long x, ushort other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and byte
@@ -514,7 +516,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, byte other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and char
@@ -522,7 +524,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, char other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and decimal
@@ -530,7 +532,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, decimal other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, decimal other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and double
@@ -538,7 +540,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, double other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, double other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and float
@@ -546,7 +548,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, float other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, float other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and int
@@ -554,7 +556,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, int other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and long
@@ -562,7 +564,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, long other) => x > other ? x - other : x < other ? other - x : 0;
+    public static long DifferenceFrom(this long x, long other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and sbyte
@@ -570,7 +572,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, sbyte other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and short
@@ -578,7 +580,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, short other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and uint
@@ -586,7 +588,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, uint other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, uint other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and ulong
@@ -594,7 +596,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, ulong other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between long and ushort
@@ -602,7 +604,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static long DifferenceFrom(this long x, ushort other) => x > (long)other ? x - (long)other : x < (long)other ? (long)other - x : 0;
+    public static long DifferenceFrom(this long x, ushort other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Divides long by byte
@@ -610,7 +612,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, byte divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, byte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by char
@@ -618,7 +620,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, char divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, char divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by decimal
@@ -626,7 +628,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, decimal divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, decimal divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by double
@@ -634,7 +636,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, double divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, double divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by float
@@ -642,7 +644,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, float divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, float divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by int
@@ -650,7 +652,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, int divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, int divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by long
@@ -658,7 +660,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, long divisor) => x / divisor;
+    public static long DividedBy(this long x, long divisor) => TypedMathCore.DividedBy(x, divisor);
 
     /// <summary>
     /// Divides long by sbyte
@@ -666,7 +668,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, sbyte divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, sbyte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by short
@@ -674,7 +676,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, short divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, short divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by uint
@@ -682,7 +684,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, uint divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, uint divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by ulong
@@ -690,7 +692,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, ulong divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, ulong divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides long by ushort
@@ -698,7 +700,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static long DividedBy(this long x, ushort divisor) => x / (long)divisor;
+    public static long DividedBy(this long x, ushort divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Checks if long is greater than byte
@@ -706,7 +708,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, byte other) => x > (long)other;
+    public static bool GreaterThan(this long x, byte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than char
@@ -714,7 +716,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, char other) => x > (long)other;
+    public static bool GreaterThan(this long x, char other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than decimal
@@ -722,7 +724,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, decimal other) => x > (long)other;
+    public static bool GreaterThan(this long x, decimal other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than double
@@ -730,7 +732,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, double other) => x > (long)other;
+    public static bool GreaterThan(this long x, double other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than float
@@ -738,7 +740,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, float other) => x > (long)other;
+    public static bool GreaterThan(this long x, float other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than int
@@ -746,7 +748,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, int other) => x > (long)other;
+    public static bool GreaterThan(this long x, int other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than long
@@ -754,7 +756,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, long other) => x > other;
+    public static bool GreaterThan(this long x, long other) => TypedMathCore.GreaterThan(x, other);
 
     /// <summary>
     /// Checks if long is greater than sbyte
@@ -762,7 +764,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, sbyte other) => x > (long)other;
+    public static bool GreaterThan(this long x, sbyte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than short
@@ -770,7 +772,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, short other) => x > (long)other;
+    public static bool GreaterThan(this long x, short other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than uint
@@ -778,7 +780,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, uint other) => x > (long)other;
+    public static bool GreaterThan(this long x, uint other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than ulong
@@ -786,7 +788,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, ulong other) => x > (long)other;
+    public static bool GreaterThan(this long x, ulong other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long is greater than ushort
@@ -794,7 +796,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this long x, ushort other) => x > (long)other;
+    public static bool GreaterThan(this long x, ushort other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if long equals byte
@@ -802,7 +804,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, byte other) => x == (long)other;
+    public static bool IsEqualTo(this long x, byte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals char
@@ -810,7 +812,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, char other) => x == (long)other;
+    public static bool IsEqualTo(this long x, char other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals decimal
@@ -818,7 +820,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, decimal other) => x == (long)other;
+    public static bool IsEqualTo(this long x, decimal other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals double
@@ -826,7 +828,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, double other) => x == (long)other;
+    public static bool IsEqualTo(this long x, double other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals float
@@ -834,7 +836,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, float other) => x == (long)other;
+    public static bool IsEqualTo(this long x, float other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals int
@@ -842,7 +844,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, int other) => x == (long)other;
+    public static bool IsEqualTo(this long x, int other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals long
@@ -850,7 +852,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, long other) => x == other;
+    public static bool IsEqualTo(this long x, long other) => TypedMathCore.IsEqualTo(x, other);
 
     /// <summary>
     /// Checks if long equals sbyte
@@ -858,7 +860,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, sbyte other) => x == (long)other;
+    public static bool IsEqualTo(this long x, sbyte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals short
@@ -866,7 +868,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, short other) => x == (long)other;
+    public static bool IsEqualTo(this long x, short other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals uint
@@ -874,7 +876,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, uint other) => x == (long)other;
+    public static bool IsEqualTo(this long x, uint other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals ulong
@@ -882,7 +884,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, ulong other) => x == (long)other;
+    public static bool IsEqualTo(this long x, ulong other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long equals ushort
@@ -890,14 +892,14 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this long x, ushort other) => x == (long)other;
+    public static bool IsEqualTo(this long x, ushort other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Gets boolean true if long is less than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this long x) => x < 0;
+    public static bool IsNegative(this long x) => TypedMathCore.IsNegative(x);
 
     /// <summary>
     /// Checks if long does not equal byte
@@ -905,7 +907,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, byte other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, byte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal char
@@ -913,7 +915,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, char other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, char other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal decimal
@@ -921,7 +923,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, decimal other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, decimal other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal double
@@ -929,7 +931,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, double other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, double other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal float
@@ -937,7 +939,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, float other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, float other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal int
@@ -945,7 +947,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, int other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, int other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal long
@@ -953,7 +955,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, long other) => x != other;
+    public static bool IsNotEqualTo(this long x, long other) => TypedMathCore.IsNotEqualTo(x, other);
 
     /// <summary>
     /// Checks if long does not equal sbyte
@@ -961,7 +963,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, sbyte other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, sbyte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal short
@@ -969,7 +971,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, short other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, short other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal uint
@@ -977,7 +979,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, uint other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, uint other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal ulong
@@ -985,7 +987,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, ulong other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, ulong other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if long does not equal ushort
@@ -993,14 +995,14 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this long x, ushort other) => x != (long)other;
+    public static bool IsNotEqualTo(this long x, ushort other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Gets boolean true if long is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is positive</returns>
-    public static bool IsPositive(this long x) => x > 0;
+    public static bool IsPositive(this long x) => TypedMathCore.IsPositive(x);
 
     /// <summary>
     /// Checks if long is less than byte
@@ -1008,7 +1010,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, byte other) => x < (long)other;
+    public static bool LessThan(this long x, byte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than char
@@ -1016,7 +1018,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, char other) => x < (long)other;
+    public static bool LessThan(this long x, char other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than decimal
@@ -1024,7 +1026,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, decimal other) => x < (long)other;
+    public static bool LessThan(this long x, decimal other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than double
@@ -1032,7 +1034,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, double other) => x < (long)other;
+    public static bool LessThan(this long x, double other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than float
@@ -1040,7 +1042,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, float other) => x < (long)other;
+    public static bool LessThan(this long x, float other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than int
@@ -1048,7 +1050,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, int other) => x < (long)other;
+    public static bool LessThan(this long x, int other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than long
@@ -1056,7 +1058,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, long other) => x < other;
+    public static bool LessThan(this long x, long other) => TypedMathCore.LessThan(x, other);
 
     /// <summary>
     /// Checks if long is less than sbyte
@@ -1064,7 +1066,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, sbyte other) => x < (long)other;
+    public static bool LessThan(this long x, sbyte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than short
@@ -1072,7 +1074,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, short other) => x < (long)other;
+    public static bool LessThan(this long x, short other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than uint
@@ -1080,7 +1082,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, uint other) => x < (long)other;
+    public static bool LessThan(this long x, uint other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than ulong
@@ -1088,7 +1090,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, ulong other) => x < (long)other;
+    public static bool LessThan(this long x, ulong other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if long is less than ushort
@@ -1096,7 +1098,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this long x, ushort other) => x < (long)other;
+    public static bool LessThan(this long x, ushort other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Gets remainder of long divided by byte
@@ -1104,7 +1106,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, byte divisor) => x % (long)divisor;
+    public static long Modulus(this long x, byte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by char
@@ -1112,7 +1114,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, char divisor) => x % (long)divisor;
+    public static long Modulus(this long x, char divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by decimal
@@ -1120,7 +1122,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, decimal divisor) => x % (long)divisor;
+    public static long Modulus(this long x, decimal divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by double
@@ -1128,7 +1130,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, double divisor) => x % (long)divisor;
+    public static long Modulus(this long x, double divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by float
@@ -1136,7 +1138,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, float divisor) => x % (long)divisor;
+    public static long Modulus(this long x, float divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by int
@@ -1144,7 +1146,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, int divisor) => x % (long)divisor;
+    public static long Modulus(this long x, int divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by long
@@ -1152,7 +1154,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, long divisor) => x % divisor;
+    public static long Modulus(this long x, long divisor) => TypedMathCore.Modulus(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by sbyte
@@ -1160,7 +1162,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, sbyte divisor) => x % (long)divisor;
+    public static long Modulus(this long x, sbyte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by short
@@ -1168,7 +1170,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, short divisor) => x % (long)divisor;
+    public static long Modulus(this long x, short divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by uint
@@ -1176,7 +1178,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, uint divisor) => x % (long)divisor;
+    public static long Modulus(this long x, uint divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by ulong
@@ -1184,7 +1186,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, ulong divisor) => x % (long)divisor;
+    public static long Modulus(this long x, ulong divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of long divided by ushort
@@ -1192,7 +1194,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static long Modulus(this long x, ushort divisor) => x % (long)divisor;
+    public static long Modulus(this long x, ushort divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Multiplies long with byte
@@ -1200,7 +1202,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, byte multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, byte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with char
@@ -1208,7 +1210,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, char multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, char multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with decimal
@@ -1216,7 +1218,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, decimal multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, decimal multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with double
@@ -1224,7 +1226,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, double multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, double multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with float
@@ -1232,7 +1234,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, float multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, float multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with int
@@ -1240,7 +1242,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, int multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, int multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with long
@@ -1248,7 +1250,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, long multiplier) => x * multiplier;
+    public static long MultipliedWith(this long x, long multiplier) => TypedMathCore.MultipliedWith(x, multiplier);
 
     /// <summary>
     /// Multiplies long with sbyte
@@ -1256,7 +1258,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, sbyte multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, sbyte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with short
@@ -1264,7 +1266,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, short multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, short multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with uint
@@ -1272,7 +1274,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, uint multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, uint multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with ulong
@@ -1280,7 +1282,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, ulong multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, ulong multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies long with ushort
@@ -1288,7 +1290,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static long MultipliedWith(this long x, ushort multiplier) => x * (long)multiplier;
+    public static long MultipliedWith(this long x, ushort multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Calculates long percent of byte
@@ -1296,7 +1298,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, byte number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, byte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of char
@@ -1304,7 +1306,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, char number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, char number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of decimal
@@ -1312,7 +1314,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, decimal number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, decimal number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of double
@@ -1320,7 +1322,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, double number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, double number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of float
@@ -1328,7 +1330,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, float number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, float number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of int
@@ -1336,7 +1338,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, int number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, int number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of long
@@ -1344,7 +1346,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, long number) => x / 100 * number;
+    public static long PercentOf(this long x, long number) => TypedMathCore.PercentOf(x, number);
 
     /// <summary>
     /// Calculates long percent of sbyte
@@ -1352,7 +1354,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, sbyte number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, sbyte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of short
@@ -1360,7 +1362,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, short number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, short number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of uint
@@ -1368,7 +1370,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, uint number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, uint number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of ulong
@@ -1376,7 +1378,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, ulong number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, ulong number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates long percent of ushort
@@ -1384,7 +1386,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static long PercentOf(this long x, ushort number) => x / 100 * (long)number;
+    public static long PercentOf(this long x, ushort number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Subtracts byte from long
@@ -1393,7 +1395,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, byte subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from long
@@ -1402,7 +1404,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, char subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts decimal from long
@@ -1411,7 +1413,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, decimal subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, decimal subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts double from long
@@ -1420,7 +1422,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, double subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, double subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts float from long
@@ -1429,7 +1431,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, float subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, float subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from long
@@ -1438,7 +1440,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, int subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from long
@@ -1447,7 +1449,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, long subtrahend) => x - subtrahend;
+    public static long Substract(this long x, long subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from long
@@ -1456,7 +1458,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, sbyte subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from long
@@ -1465,7 +1467,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, short subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from long
@@ -1474,7 +1476,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, uint subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, uint subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from long
@@ -1483,7 +1485,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, ulong subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from long
@@ -1492,7 +1494,7 @@ public static class TypedMathLongExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static long Substract(this long x, ushort subtrahend) => x - (long)subtrahend;
+    public static long Substract(this long x, ushort subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1501,7 +1503,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, byte percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1510,7 +1512,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, char percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1519,7 +1521,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, decimal percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, decimal percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1528,7 +1530,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, double percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, double percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1537,7 +1539,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, float percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, float percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1546,7 +1548,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, int percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1555,7 +1557,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, long percent) => x - (x * percent / 100);
+    public static long SubstractPercent(this long x, long percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1564,7 +1566,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, sbyte percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1573,7 +1575,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, short percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1582,7 +1584,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, uint percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, uint percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1591,7 +1593,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, ulong percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of long
@@ -1600,7 +1602,7 @@ public static class TypedMathLongExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static long SubstractPercent(this long x, ushort percent) => x - (x * (long)percent / 100);
+    public static long SubstractPercent(this long x, ushort percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts byte from long
@@ -1608,7 +1610,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, byte subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from long
@@ -1616,7 +1618,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, char subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts decimal from long
@@ -1624,7 +1626,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, decimal subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, decimal subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts double from long
@@ -1632,7 +1634,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, double subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, double subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts float from long
@@ -1640,7 +1642,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, float subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, float subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from long
@@ -1648,7 +1650,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, int subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from long
@@ -1656,7 +1658,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, long subtrahend) => x - subtrahend;
+    public static long Subtract(this long x, long subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from long
@@ -1664,7 +1666,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, sbyte subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from long
@@ -1672,7 +1674,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, short subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from long
@@ -1680,7 +1682,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, uint subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, uint subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from long
@@ -1688,7 +1690,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, ulong subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from long
@@ -1696,7 +1698,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static long Subtract(this long x, ushort subtrahend) => x - (long)subtrahend;
+    public static long Subtract(this long x, ushort subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1704,7 +1706,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, byte percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1712,7 +1714,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, char percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1720,7 +1722,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, decimal percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, decimal percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1728,7 +1730,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, double percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, double percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1736,7 +1738,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, float percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, float percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1744,7 +1746,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, int percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1752,7 +1754,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, long percent) => x - (x * percent / 100);
+    public static long SubtractPercent(this long x, long percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1760,7 +1762,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, sbyte percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1768,7 +1770,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, short percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1776,7 +1778,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, uint percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, uint percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1784,7 +1786,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, ulong percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from long
@@ -1792,7 +1794,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static long SubtractPercent(this long x, ushort percent) => x - (x * (long)percent / 100);
+    public static long SubtractPercent(this long x, ushort percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Decreases all values in the array by the specified amount
@@ -1801,8 +1803,7 @@ public static class TypedMathLongExtension
     /// <param name="dec">The amount to subtract</param>
     /// <returns>Array with all values decreased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static long[] DecreaseAllValuesWith(this long[] array, long dec) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.DecreaseAllValuesWith(array, dec);
+    public static long[] DecreaseAllValuesWith(this long[] array, long dec) => TypedMathCore.DecreaseAllValuesWith(array, dec);
 
     /// <summary>
     /// Peeks the average value of the numbers in the array
@@ -1810,8 +1811,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The average value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetAverage(). This method will be removed in v2.0.", false)]
-    public static double GetAverage(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetAverage(array);
+    public static double GetAverage(this long[] array) => TypedMathCore.GetAverage(array);
 
     /// <summary>
     /// Gets the first half of the array
@@ -1819,8 +1819,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The first half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
-    public static long[] GetFirstHalf(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetFirstHalf(array);
+    public static long[] GetFirstHalf(this long[] array) => TypedMathCore.GetFirstHalf(array);
 
     /// <summary>
     /// Gets the first value in the array
@@ -1828,8 +1827,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The first value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
-    public static long GetFirstValue(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetFirstValue(array);
+    public static long GetFirstValue(this long[] array) => TypedMathCore.GetFirstValue(array);
 
     /// <summary>
     /// Gets the highest value in the array
@@ -1837,8 +1835,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The highest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
-    public static long GetHighestValue(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetHighestValue(array);
+    public static long GetHighestValue(this long[] array) => TypedMathCore.GetHighestValue(array);
 
     /// <summary>
     /// Gets the last half of the array
@@ -1846,8 +1843,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The last half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
-    public static long[] GetLastHalf(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetLastHalf(array);
+    public static long[] GetLastHalf(this long[] array) => TypedMathCore.GetLastHalf(array);
 
     /// <summary>
     /// Gets the last value in the array
@@ -1855,8 +1851,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The last value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetLastValue(). This method will be removed in v2.0.", false)]
-    public static long GetLastValue(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetLastValue(array);
+    public static long GetLastValue(this long[] array) => TypedMathCore.GetLastValue(array);
 
     /// <summary>
     /// Gets the lowest value in the array
@@ -1864,8 +1859,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The lowest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
-    public static long GetLowestValue(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetLowestValue(array);
+    public static long GetLowestValue(this long[] array) => TypedMathCore.GetLowestValue(array);
 
     /// <summary>
     /// Gets the middle portion of the array
@@ -1873,8 +1867,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The middle portion of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetMiddle(). This method will be removed in v2.0.", false)]
-    public static long[] GetMiddle(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetMiddle(array);
+    public static long[] GetMiddle(this long[] array) => TypedMathCore.GetMiddle(array);
 
     /// <summary>
     /// Gets the middle value in the array
@@ -1882,8 +1875,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The middle value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
-    public static long GetMiddleValue(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetMiddleValue(array);
+    public static long GetMiddleValue(this long[] array) => TypedMathCore.GetMiddleValue(array);
 
     /// <summary>
     /// Gets all values higher than or equal to the specified value
@@ -1892,8 +1884,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values higher than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
-    public static long[] GetValuesHigherThan(this long[] array, long x) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetValuesHigherThan(array, x);
+    public static long[] GetValuesHigherThan(this long[] array, long x) => TypedMathCore.GetValuesHigherThan(array, x);
 
     /// <summary>
     /// Gets all values lower than or equal to the specified value
@@ -1902,8 +1893,7 @@ public static class TypedMathLongExtension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values lower than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
-    public static long[] GetValuesLowerThan(this long[] array, long x) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.GetValuesLowerThan(array, x);
+    public static long[] GetValuesLowerThan(this long[] array, long x) => TypedMathCore.GetValuesLowerThan(array, x);
 
     /// <summary>
     /// Increases all values in the array by the specified amount
@@ -1912,8 +1902,7 @@ public static class TypedMathLongExtension
     /// <param name="add">The amount to add</param>
     /// <returns>Array with all values increased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static long[] IncreaseAllValuesWith(this long[] array, long add) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.IncreaseAllValuesWith(array, add);
+    public static long[] IncreaseAllValuesWith(this long[] array, long add) => TypedMathCore.IncreaseAllValuesWith(array, add);
 
     /// <summary>
     /// Rotates the numbers to the left
@@ -1921,8 +1910,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.RotateLeft(). This method will be removed in v2.0.", false)]
-    public static long[] RotateLeft(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.RotateLeft(array);
+    public static long[] RotateLeft(this long[] array) => TypedMathCore.RotateLeft(array);
 
     /// <summary>
     /// Rotates the numbers to the right
@@ -1930,8 +1918,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.RotateRight(). This method will be removed in v2.0.", false)]
-    public static long[] RotateRight(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.RotateRight(array);
+    public static long[] RotateRight(this long[] array) => TypedMathCore.RotateRight(array);
 
     /// <summary>
     /// Sets a new size for the array
@@ -1940,8 +1927,7 @@ public static class TypedMathLongExtension
     /// <param name="size">The new size</param>
     /// <returns>Array with new size</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
-    public static long[] SetNewArraySize(this long[] array, int size) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SetNewArraySize(array, size);
+    public static long[] SetNewArraySize(this long[] array, int size) => TypedMathCore.SetNewArraySize(array, size);
 
     /// <summary>
     /// Sorts the array in ascending order
@@ -1949,8 +1935,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in ascending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
-    public static long[] SortArrayAsc(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SortArrayAsc(array);
+    public static long[] SortArrayAsc(this long[] array) => TypedMathCore.SortArrayAsc(array);
 
     /// <summary>
     /// Sorts the array in descending order
@@ -1958,8 +1943,7 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in descending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
-    public static long[] SortArrayDesc(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SortArrayDesc(array);
+    public static long[] SortArrayDesc(this long[] array) => TypedMathCore.SortArrayDesc(array);
 
     /// <summary>
     /// Sums all values in the array
@@ -1967,6 +1951,5 @@ public static class TypedMathLongExtension
     /// <param name="array">The array</param>
     /// <returns>The sum of all values</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SumAllValues(). This method will be removed in v2.0.", false)]
-    public static long SumAllValues(this long[] array) =>
-        MarcusMedinaPro.TypedMath.LongCollections.TypedMathLongCollections.SumAllValues(array);
+    public static long SumAllValues(this long[] array) => TypedMathCore.SumAllValues(array);
 }

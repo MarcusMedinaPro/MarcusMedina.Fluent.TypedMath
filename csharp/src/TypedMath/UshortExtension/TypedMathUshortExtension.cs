@@ -1,9 +1,11 @@
-﻿// ----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathUshortExtension.cs" company="MarcusMedinaPro">
 //     By Marcus Medina, 2019 - http://MarcusMedina.Pro This file is subject to the terms and
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
+
+using MarcusMedinaPro.TypedMath.Core;
 
 namespace MarcusMedinaPro.TypedMath.UshortExtension;
 
@@ -22,7 +24,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, byte addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, byte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds char to ushort
@@ -30,7 +32,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, char addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, char addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds decimal to ushort
@@ -38,7 +40,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, decimal addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, decimal addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds double to ushort
@@ -46,7 +48,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, double addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, double addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds float to ushort
@@ -54,7 +56,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, float addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, float addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds int to ushort
@@ -62,7 +64,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, int addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, int addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds long to ushort
@@ -70,7 +72,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, long addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, long addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds sbyte to ushort
@@ -78,7 +80,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, sbyte addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, sbyte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds short to ushort
@@ -86,7 +88,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, short addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, short addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds uint to ushort
@@ -94,7 +96,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, uint addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, uint addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ulong to ushort
@@ -102,7 +104,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, ulong addend) => (ushort)(x + (ushort)addend);
+    public static ushort Add(this ushort x, ulong addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ushort to ushort
@@ -110,7 +112,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static ushort Add(this ushort x, ushort addend) => (ushort)(x + addend);
+    public static ushort Add(this ushort x, ushort addend) => TypedMathCore.Add(x, addend);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -118,7 +120,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, byte percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, byte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -126,7 +128,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, char percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, char percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -134,7 +136,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, decimal percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, decimal percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -142,7 +144,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, double percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, double percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -150,7 +152,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, float percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, float percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -158,7 +160,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, int percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, int percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -166,7 +168,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, long percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, long percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -174,7 +176,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, sbyte percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, sbyte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -182,7 +184,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, short percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, short percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -190,7 +192,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, uint percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, uint percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -198,7 +200,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, ulong percent) => (ushort)(x + (x * (ushort)percent / 100));
+    public static ushort AddPercent(this ushort x, ulong percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to ushort
@@ -206,7 +208,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static ushort AddPercent(this ushort x, ushort percent) => (ushort)(x + (x * percent / 100));
+    public static ushort AddPercent(this ushort x, ushort percent) => TypedMathCore.AddPercent(x, percent);
 
     /// <summary>
     /// Returns ushort if higher than byte, otherwise byte
@@ -214,7 +216,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, byte other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, byte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than char, otherwise char
@@ -222,7 +224,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, char other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, char other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than decimal, otherwise decimal
@@ -230,7 +232,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, decimal other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, decimal other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than double, otherwise double
@@ -238,7 +240,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, double other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, double other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than float, otherwise float
@@ -246,7 +248,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, float other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, float other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than int, otherwise int
@@ -254,7 +256,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, int other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, int other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than long, otherwise long
@@ -262,7 +264,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, long other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, long other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than sbyte, otherwise sbyte
@@ -270,7 +272,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, sbyte other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, sbyte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than short, otherwise short
@@ -278,7 +280,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, short other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, short other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than uint, otherwise uint
@@ -286,7 +288,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, uint other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, uint other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than ulong, otherwise ulong
@@ -294,7 +296,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, ulong other) => (ushort)(x > (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfHigher(this ushort x, ulong other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns ushort if higher than ushort, otherwise ushort
@@ -302,7 +304,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static ushort ChooseIfHigher(this ushort x, ushort other) => (ushort)(x > other ? x : other);
+    public static ushort ChooseIfHigher(this ushort x, ushort other) => TypedMathCore.ChooseIfHigher(x, other);
 
     /// <summary>
     /// Returns ushort if lower than byte, otherwise byte
@@ -310,7 +312,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, byte other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, byte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than char, otherwise char
@@ -318,7 +320,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, char other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, char other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than decimal, otherwise decimal
@@ -326,7 +328,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, decimal other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, decimal other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than double, otherwise double
@@ -334,7 +336,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, double other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, double other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than float, otherwise float
@@ -342,7 +344,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, float other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, float other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than int, otherwise int
@@ -350,7 +352,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, int other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, int other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than long, otherwise long
@@ -358,7 +360,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, long other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, long other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than sbyte, otherwise sbyte
@@ -366,7 +368,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, sbyte other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, sbyte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than short, otherwise short
@@ -374,7 +376,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, short other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, short other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than uint, otherwise uint
@@ -382,7 +384,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, uint other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, uint other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than ulong, otherwise ulong
@@ -390,7 +392,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, ulong other) => (ushort)(x < (ushort)other ? x : (ushort)other);
+    public static ushort ChooseIfLower(this ushort x, ulong other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns ushort if lower than ushort, otherwise ushort
@@ -398,7 +400,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static ushort ChooseIfLower(this ushort x, ushort other) => (ushort)(x < other ? x : other);
+    public static ushort ChooseIfLower(this ushort x, ushort other) => TypedMathCore.ChooseIfLower(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and byte
@@ -407,7 +409,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, byte other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and char
@@ -416,7 +418,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, char other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and decimal
@@ -425,7 +427,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, decimal other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, decimal other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and double
@@ -434,7 +436,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, double other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, double other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and float
@@ -443,7 +445,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, float other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, float other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and int
@@ -452,7 +454,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, int other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and long
@@ -461,7 +463,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, long other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, long other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and sbyte
@@ -470,7 +472,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, sbyte other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and short
@@ -479,7 +481,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, short other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and uint
@@ -488,7 +490,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, uint other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, uint other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and ulong
@@ -497,7 +499,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, ulong other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and ushort
@@ -506,7 +508,7 @@ public static class TypedMathUshortExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static ushort DiferenceFrom(this ushort x, ushort other) => (ushort)(x > other ? x - other : x < other ? other - x : 0);
+    public static ushort DiferenceFrom(this ushort x, ushort other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and byte
@@ -514,7 +516,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, byte other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and char
@@ -522,7 +524,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, char other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and decimal
@@ -530,7 +532,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, decimal other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, decimal other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and double
@@ -538,7 +540,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, double other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, double other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and float
@@ -546,7 +548,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, float other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, float other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and int
@@ -554,7 +556,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, int other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and long
@@ -562,7 +564,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, long other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, long other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and sbyte
@@ -570,7 +572,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, sbyte other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and short
@@ -578,7 +580,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, short other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and uint
@@ -586,7 +588,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, uint other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, uint other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and ulong
@@ -594,7 +596,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, ulong other) => (ushort)(x > (ushort)other ? x - (ushort)other : x < (ushort)other ? (ushort)other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between ushort and ushort
@@ -602,7 +604,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static ushort DifferenceFrom(this ushort x, ushort other) => (ushort)(x > other ? x - other : x < other ? other - x : 0);
+    public static ushort DifferenceFrom(this ushort x, ushort other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Divides ushort by byte
@@ -610,7 +612,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, byte divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, byte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by char
@@ -618,7 +620,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, char divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, char divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by decimal
@@ -626,7 +628,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, decimal divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, decimal divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by double
@@ -634,7 +636,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, double divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, double divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by float
@@ -642,7 +644,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, float divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, float divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by int
@@ -650,7 +652,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, int divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, int divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by long
@@ -658,7 +660,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, long divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, long divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by sbyte
@@ -666,7 +668,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, sbyte divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, sbyte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by short
@@ -674,7 +676,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, short divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, short divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by uint
@@ -682,7 +684,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, uint divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, uint divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by ulong
@@ -690,7 +692,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, ulong divisor) => (ushort)(x / (ushort)divisor);
+    public static ushort DividedBy(this ushort x, ulong divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides ushort by ushort
@@ -698,7 +700,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static ushort DividedBy(this ushort x, ushort divisor) => (ushort)(x / divisor);
+    public static ushort DividedBy(this ushort x, ushort divisor) => TypedMathCore.DividedBy(x, divisor);
 
     /// <summary>
     /// Checks if ushort is greater than byte
@@ -706,7 +708,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, byte other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, byte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than char
@@ -714,7 +716,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, char other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, char other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than decimal
@@ -722,7 +724,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, decimal other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, decimal other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than double
@@ -730,7 +732,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, double other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, double other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than float
@@ -738,7 +740,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, float other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, float other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than int
@@ -746,7 +748,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, int other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, int other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than long
@@ -754,7 +756,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, long other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, long other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than sbyte
@@ -762,7 +764,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, sbyte other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, sbyte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than short
@@ -770,7 +772,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, short other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, short other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than uint
@@ -778,7 +780,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, uint other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, uint other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than ulong
@@ -786,7 +788,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, ulong other) => x > (ushort)other;
+    public static bool GreaterThan(this ushort x, ulong other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is greater than ushort
@@ -794,7 +796,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this ushort x, ushort other) => x > other;
+    public static bool GreaterThan(this ushort x, ushort other) => TypedMathCore.GreaterThan(x, other);
 
     /// <summary>
     /// Checks if ushort equals byte
@@ -802,7 +804,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, byte other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, byte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals char
@@ -810,7 +812,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, char other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, char other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals decimal
@@ -818,7 +820,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, decimal other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, decimal other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals double
@@ -826,7 +828,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, double other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, double other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals float
@@ -834,7 +836,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, float other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, float other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals int
@@ -842,7 +844,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, int other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, int other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals long
@@ -850,7 +852,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, long other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, long other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals sbyte
@@ -858,7 +860,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, sbyte other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, sbyte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals short
@@ -866,7 +868,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, short other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, short other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals uint
@@ -874,7 +876,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, uint other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, uint other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals ulong
@@ -882,7 +884,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, ulong other) => x == (ushort)other;
+    public static bool IsEqualTo(this ushort x, ulong other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort equals ushort
@@ -890,14 +892,14 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this ushort x, ushort other) => x == other;
+    public static bool IsEqualTo(this ushort x, ushort other) => TypedMathCore.IsEqualTo(x, other);
 
     /// <summary>
     /// Gets boolean true if ushort is less than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this ushort x) => false;
+    public static bool IsNegative(this ushort x) => TypedMathCore.IsNegative(x);
 
     /// <summary>
     /// Checks if ushort does not equal byte
@@ -905,7 +907,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, byte other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, byte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal char
@@ -913,7 +915,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, char other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, char other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal decimal
@@ -921,7 +923,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, decimal other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, decimal other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal double
@@ -929,7 +931,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, double other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, double other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal float
@@ -937,7 +939,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, float other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, float other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal int
@@ -945,7 +947,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, int other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, int other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal long
@@ -953,7 +955,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, long other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, long other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal sbyte
@@ -961,7 +963,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, sbyte other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, sbyte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal short
@@ -969,7 +971,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, short other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, short other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal uint
@@ -977,7 +979,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, uint other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, uint other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal ulong
@@ -985,7 +987,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, ulong other) => x != (ushort)other;
+    public static bool IsNotEqualTo(this ushort x, ulong other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if ushort does not equal ushort
@@ -993,14 +995,14 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this ushort x, ushort other) => x != other;
+    public static bool IsNotEqualTo(this ushort x, ushort other) => TypedMathCore.IsNotEqualTo(x, other);
 
     /// <summary>
     /// Gets boolean true if ushort is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is positive</returns>
-    public static bool IsPositive(this ushort x) => x > 0;
+    public static bool IsPositive(this ushort x) => TypedMathCore.IsPositive(x);
 
     /// <summary>
     /// Checks if ushort is less than byte
@@ -1008,7 +1010,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, byte other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, byte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than char
@@ -1016,7 +1018,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, char other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, char other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than decimal
@@ -1024,7 +1026,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, decimal other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, decimal other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than double
@@ -1032,7 +1034,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, double other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, double other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than float
@@ -1040,7 +1042,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, float other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, float other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than int
@@ -1048,7 +1050,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, int other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, int other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than long
@@ -1056,7 +1058,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, long other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, long other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than sbyte
@@ -1064,7 +1066,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, sbyte other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, sbyte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than short
@@ -1072,7 +1074,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, short other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, short other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than uint
@@ -1080,7 +1082,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, uint other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, uint other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than ulong
@@ -1088,7 +1090,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, ulong other) => x < (ushort)other;
+    public static bool LessThan(this ushort x, ulong other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if ushort is less than ushort
@@ -1096,7 +1098,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this ushort x, ushort other) => x < other;
+    public static bool LessThan(this ushort x, ushort other) => TypedMathCore.LessThan(x, other);
 
     /// <summary>
     /// Gets remainder of ushort divided by byte
@@ -1104,7 +1106,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, byte divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, byte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by char
@@ -1112,7 +1114,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, char divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, char divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by decimal
@@ -1120,7 +1122,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, decimal divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, decimal divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by double
@@ -1128,7 +1130,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, double divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, double divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by float
@@ -1136,7 +1138,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, float divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, float divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by int
@@ -1144,7 +1146,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, int divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, int divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by long
@@ -1152,7 +1154,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, long divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, long divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by sbyte
@@ -1160,7 +1162,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, sbyte divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, sbyte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by short
@@ -1168,7 +1170,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, short divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, short divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by uint
@@ -1176,7 +1178,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, uint divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, uint divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by ulong
@@ -1184,7 +1186,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, ulong divisor) => (ushort)(x % (ushort)divisor);
+    public static ushort Modulus(this ushort x, ulong divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of ushort divided by ushort
@@ -1192,7 +1194,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static ushort Modulus(this ushort x, ushort divisor) => (ushort)(x % divisor);
+    public static ushort Modulus(this ushort x, ushort divisor) => TypedMathCore.Modulus(x, divisor);
 
     /// <summary>
     /// Multiplies ushort with byte
@@ -1200,7 +1202,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, byte multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, byte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with char
@@ -1208,7 +1210,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, char multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, char multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with decimal
@@ -1216,7 +1218,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, decimal multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, decimal multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with double
@@ -1224,7 +1226,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, double multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, double multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with float
@@ -1232,7 +1234,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, float multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, float multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with int
@@ -1240,7 +1242,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, int multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, int multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with long
@@ -1248,7 +1250,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, long multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, long multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with sbyte
@@ -1256,7 +1258,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, sbyte multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, sbyte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with short
@@ -1264,7 +1266,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, short multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, short multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with uint
@@ -1272,7 +1274,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, uint multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, uint multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with ulong
@@ -1280,7 +1282,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, ulong multiplier) => (ushort)(x * (ushort)multiplier);
+    public static ushort MultipliedWith(this ushort x, ulong multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies ushort with ushort
@@ -1288,7 +1290,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static ushort MultipliedWith(this ushort x, ushort multiplier) => (ushort)(x * multiplier);
+    public static ushort MultipliedWith(this ushort x, ushort multiplier) => TypedMathCore.MultipliedWith(x, multiplier);
 
     /// <summary>
     /// Calculates ushort percent of byte
@@ -1296,7 +1298,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, byte number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, byte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of char
@@ -1304,7 +1306,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, char number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, char number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of decimal
@@ -1312,7 +1314,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, decimal number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, decimal number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of double
@@ -1320,7 +1322,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, double number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, double number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of float
@@ -1328,7 +1330,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, float number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, float number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of int
@@ -1336,7 +1338,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, int number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, int number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of long
@@ -1344,7 +1346,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, long number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, long number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of sbyte
@@ -1352,7 +1354,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, sbyte number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, sbyte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of short
@@ -1360,7 +1362,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, short number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, short number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of uint
@@ -1368,7 +1370,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, uint number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, uint number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of ulong
@@ -1376,7 +1378,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, ulong number) => (ushort)(x / 100 * (ushort)number);
+    public static ushort PercentOf(this ushort x, ulong number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates ushort percent of ushort
@@ -1384,7 +1386,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static ushort PercentOf(this ushort x, ushort number) => (ushort)(x / 100 * number);
+    public static ushort PercentOf(this ushort x, ushort number) => TypedMathCore.PercentOf(x, number);
 
     /// <summary>
     /// Subtracts byte from ushort
@@ -1393,7 +1395,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, byte subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from ushort
@@ -1402,7 +1404,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, char subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts decimal from ushort
@@ -1411,7 +1413,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, decimal subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, decimal subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts double from ushort
@@ -1420,7 +1422,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, double subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, double subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts float from ushort
@@ -1429,7 +1431,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, float subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, float subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from ushort
@@ -1438,7 +1440,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, int subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from ushort
@@ -1447,7 +1449,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, long subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, long subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from ushort
@@ -1456,7 +1458,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, sbyte subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from ushort
@@ -1465,7 +1467,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, short subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from ushort
@@ -1474,7 +1476,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, uint subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, uint subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from ushort
@@ -1483,7 +1485,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, ulong subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Substract(this ushort x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from ushort
@@ -1492,7 +1494,7 @@ public static class TypedMathUshortExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static ushort Substract(this ushort x, ushort subtrahend) => (ushort)(x - subtrahend);
+    public static ushort Substract(this ushort x, ushort subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1501,7 +1503,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, byte percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1510,7 +1512,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, char percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1519,7 +1521,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, decimal percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, decimal percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1528,7 +1530,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, double percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, double percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1537,7 +1539,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, float percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, float percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1546,7 +1548,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, int percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1555,7 +1557,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, long percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, long percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1564,7 +1566,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, sbyte percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1573,7 +1575,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, short percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1582,7 +1584,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, uint percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, uint percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1591,7 +1593,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, ulong percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubstractPercent(this ushort x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of ushort
@@ -1600,7 +1602,7 @@ public static class TypedMathUshortExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static ushort SubstractPercent(this ushort x, ushort percent) => (ushort)(x - (x * percent / 100));
+    public static ushort SubstractPercent(this ushort x, ushort percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts byte from ushort
@@ -1608,7 +1610,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, byte subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from ushort
@@ -1616,7 +1618,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, char subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts decimal from ushort
@@ -1624,7 +1626,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, decimal subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, decimal subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts double from ushort
@@ -1632,7 +1634,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, double subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, double subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts float from ushort
@@ -1640,7 +1642,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, float subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, float subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from ushort
@@ -1648,7 +1650,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, int subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from ushort
@@ -1656,7 +1658,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, long subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, long subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from ushort
@@ -1664,7 +1666,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, sbyte subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from ushort
@@ -1672,7 +1674,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, short subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from ushort
@@ -1680,7 +1682,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, uint subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, uint subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from ushort
@@ -1688,7 +1690,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, ulong subtrahend) => (ushort)(x - (ushort)subtrahend);
+    public static ushort Subtract(this ushort x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from ushort
@@ -1696,7 +1698,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static ushort Subtract(this ushort x, ushort subtrahend) => (ushort)(x - subtrahend);
+    public static ushort Subtract(this ushort x, ushort subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1704,7 +1706,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, byte percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1712,7 +1714,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, char percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1720,7 +1722,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, decimal percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, decimal percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1728,7 +1730,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, double percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, double percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1736,7 +1738,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, float percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, float percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1744,7 +1746,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, int percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1752,7 +1754,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, long percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, long percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1760,7 +1762,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, sbyte percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1768,7 +1770,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, short percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1776,7 +1778,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, uint percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, uint percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1784,7 +1786,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, ulong percent) => (ushort)(x - (x * (ushort)percent / 100));
+    public static ushort SubtractPercent(this ushort x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from ushort
@@ -1792,7 +1794,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static ushort SubtractPercent(this ushort x, ushort percent) => (ushort)(x - (x * percent / 100));
+    public static ushort SubtractPercent(this ushort x, ushort percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Decreases all values in the array by the specified amount
@@ -1801,8 +1803,7 @@ public static class TypedMathUshortExtension
     /// <param name="dec">The amount to subtract</param>
     /// <returns>Array with all values decreased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static ushort[] DecreaseAllValuesWith(this ushort[] array, ushort dec) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.DecreaseAllValuesWith(array, dec);
+    public static ushort[] DecreaseAllValuesWith(this ushort[] array, ushort dec) => TypedMathCore.DecreaseAllValuesWith(array, dec);
 
     /// <summary>
     /// Peeks the average value of the numbers in the array
@@ -1810,8 +1811,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The average value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetAverage(). This method will be removed in v2.0.", false)]
-    public static double GetAverage(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetAverage(array);
+    public static double GetAverage(this ushort[] array) => TypedMathCore.GetAverage(array);
 
     /// <summary>
     /// Gets the first half of the array
@@ -1819,8 +1819,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The first half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
-    public static ushort[] GetFirstHalf(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetFirstHalf(array);
+    public static ushort[] GetFirstHalf(this ushort[] array) => TypedMathCore.GetFirstHalf(array);
 
     /// <summary>
     /// Gets the first value in the array
@@ -1828,8 +1827,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The first value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
-    public static ushort GetFirstValue(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetFirstValue(array);
+    public static ushort GetFirstValue(this ushort[] array) => TypedMathCore.GetFirstValue(array);
 
     /// <summary>
     /// Gets the highest value in the array
@@ -1837,8 +1835,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The highest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
-    public static ushort GetHighestValue(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetHighestValue(array);
+    public static ushort GetHighestValue(this ushort[] array) => TypedMathCore.GetHighestValue(array);
 
     /// <summary>
     /// Gets the last half of the array
@@ -1846,8 +1843,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The last half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
-    public static ushort[] GetLastHalf(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetLastHalf(array);
+    public static ushort[] GetLastHalf(this ushort[] array) => TypedMathCore.GetLastHalf(array);
 
     /// <summary>
     /// Gets the last value in the array
@@ -1855,8 +1851,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The last value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetLastValue(). This method will be removed in v2.0.", false)]
-    public static ushort GetLastValue(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetLastValue(array);
+    public static ushort GetLastValue(this ushort[] array) => TypedMathCore.GetLastValue(array);
 
     /// <summary>
     /// Gets the lowest value in the array
@@ -1864,8 +1859,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The lowest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
-    public static ushort GetLowestValue(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetLowestValue(array);
+    public static ushort GetLowestValue(this ushort[] array) => TypedMathCore.GetLowestValue(array);
 
     /// <summary>
     /// Gets the middle portion of the array
@@ -1873,8 +1867,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The middle portion of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetMiddle(). This method will be removed in v2.0.", false)]
-    public static ushort[] GetMiddle(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetMiddle(array);
+    public static ushort[] GetMiddle(this ushort[] array) => TypedMathCore.GetMiddle(array);
 
     /// <summary>
     /// Gets the middle value in the array
@@ -1882,8 +1875,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The middle value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
-    public static ushort GetMiddleValue(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetMiddleValue(array);
+    public static ushort GetMiddleValue(this ushort[] array) => TypedMathCore.GetMiddleValue(array);
 
     /// <summary>
     /// Gets all values higher than or equal to the specified value
@@ -1892,8 +1884,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values higher than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
-    public static ushort[] GetValuesHigherThan(this ushort[] array, ushort x) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetValuesHigherThan(array, x);
+    public static ushort[] GetValuesHigherThan(this ushort[] array, ushort x) => TypedMathCore.GetValuesHigherThan(array, x);
 
     /// <summary>
     /// Gets all values lower than or equal to the specified value
@@ -1902,8 +1893,7 @@ public static class TypedMathUshortExtension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values lower than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
-    public static ushort[] GetValuesLowerThan(this ushort[] array, ushort x) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.GetValuesLowerThan(array, x);
+    public static ushort[] GetValuesLowerThan(this ushort[] array, ushort x) => TypedMathCore.GetValuesLowerThan(array, x);
 
     /// <summary>
     /// Increases all values in the array by the specified amount
@@ -1912,8 +1902,7 @@ public static class TypedMathUshortExtension
     /// <param name="add">The amount to add</param>
     /// <returns>Array with all values increased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static ushort[] IncreaseAllValuesWith(this ushort[] array, ushort add) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.IncreaseAllValuesWith(array, add);
+    public static ushort[] IncreaseAllValuesWith(this ushort[] array, ushort add) => TypedMathCore.IncreaseAllValuesWith(array, add);
 
     /// <summary>
     /// Rotates the numbers to the left
@@ -1921,8 +1910,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.RotateLeft(). This method will be removed in v2.0.", false)]
-    public static ushort[] RotateLeft(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.RotateLeft(array);
+    public static ushort[] RotateLeft(this ushort[] array) => TypedMathCore.RotateLeft(array);
 
     /// <summary>
     /// Rotates the numbers to the right
@@ -1930,8 +1918,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.RotateRight(). This method will be removed in v2.0.", false)]
-    public static ushort[] RotateRight(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.RotateRight(array);
+    public static ushort[] RotateRight(this ushort[] array) => TypedMathCore.RotateRight(array);
 
     /// <summary>
     /// Sets a new size for the array
@@ -1940,8 +1927,7 @@ public static class TypedMathUshortExtension
     /// <param name="size">The new size</param>
     /// <returns>Array with new size</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
-    public static ushort[] SetNewArraySize(this ushort[] array, int size) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SetNewArraySize(array, size);
+    public static ushort[] SetNewArraySize(this ushort[] array, int size) => TypedMathCore.SetNewArraySize(array, size);
 
     /// <summary>
     /// Sorts the array in ascending order
@@ -1949,8 +1935,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in ascending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
-    public static ushort[] SortArrayAsc(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SortArrayAsc(array);
+    public static ushort[] SortArrayAsc(this ushort[] array) => TypedMathCore.SortArrayAsc(array);
 
     /// <summary>
     /// Sorts the array in descending order
@@ -1958,8 +1943,7 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in descending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
-    public static ushort[] SortArrayDesc(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SortArrayDesc(array);
+    public static ushort[] SortArrayDesc(this ushort[] array) => TypedMathCore.SortArrayDesc(array);
 
     /// <summary>
     /// Sums all values in the array
@@ -1967,6 +1951,5 @@ public static class TypedMathUshortExtension
     /// <param name="array">The array</param>
     /// <returns>The sum of all values</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SumAllValues(). This method will be removed in v2.0.", false)]
-    public static ushort SumAllValues(this ushort[] array) =>
-        MarcusMedinaPro.TypedMath.UshortCollections.TypedMathUshortCollections.SumAllValues(array);
+    public static ushort SumAllValues(this ushort[] array) => TypedMathCore.SumAllValues(array);
 }

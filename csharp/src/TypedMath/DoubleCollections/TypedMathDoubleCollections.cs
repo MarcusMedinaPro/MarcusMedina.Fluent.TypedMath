@@ -32,7 +32,7 @@ public static class TypedMathDoubleCollections
     /// </summary>
     /// <param name="array">The array</param>
     /// <returns>The average value</returns>
-    public static double GetAverage(this double[] array) => array.Average(x => (double)x);
+    public static double GetAverage(this double[] array) => array.Average(x => x);
 
     /// <summary>
     /// Gets the first half of the array

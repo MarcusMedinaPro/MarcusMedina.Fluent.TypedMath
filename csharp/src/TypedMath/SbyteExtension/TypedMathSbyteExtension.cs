@@ -214,7 +214,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, byte other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, byte other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than char, otherwise char
@@ -222,7 +222,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, char other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, char other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than decimal, otherwise decimal
@@ -230,7 +230,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, decimal other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, decimal other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than double, otherwise double
@@ -238,7 +238,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, double other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, double other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than float, otherwise float
@@ -246,7 +246,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, float other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, float other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than int, otherwise int
@@ -254,7 +254,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, int other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, int other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than long, otherwise long
@@ -262,7 +262,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, long other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, long other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than sbyte, otherwise sbyte
@@ -270,7 +270,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, sbyte other) => (sbyte)(x > other ? x : other);
+    public static sbyte ChooseIfHigher(this sbyte x, sbyte other) => x > other ? x : other;
 
     /// <summary>
     /// Returns sbyte if higher than short, otherwise short
@@ -278,7 +278,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, short other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, short other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than uint, otherwise uint
@@ -286,7 +286,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, uint other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, uint other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than ulong, otherwise ulong
@@ -294,7 +294,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, ulong other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, ulong other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if higher than ushort, otherwise ushort
@@ -302,7 +302,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static sbyte ChooseIfHigher(this sbyte x, ushort other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfHigher(this sbyte x, ushort other) => x > (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than byte, otherwise byte
@@ -310,7 +310,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, byte other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, byte other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than char, otherwise char
@@ -318,7 +318,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, char other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, char other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than decimal, otherwise decimal
@@ -326,7 +326,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, decimal other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, decimal other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than double, otherwise double
@@ -334,7 +334,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, double other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, double other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than float, otherwise float
@@ -342,7 +342,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, float other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, float other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than int, otherwise int
@@ -350,7 +350,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, int other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, int other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than long, otherwise long
@@ -358,7 +358,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, long other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, long other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than sbyte, otherwise sbyte
@@ -366,7 +366,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, sbyte other) => (sbyte)(x < other ? x : other);
+    public static sbyte ChooseIfLower(this sbyte x, sbyte other) => x < other ? x : other;
 
     /// <summary>
     /// Returns sbyte if lower than short, otherwise short
@@ -374,7 +374,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, short other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, short other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than uint, otherwise uint
@@ -382,7 +382,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, uint other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, uint other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than ulong, otherwise ulong
@@ -390,7 +390,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, ulong other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, ulong other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Returns sbyte if lower than ushort, otherwise ushort
@@ -398,7 +398,7 @@ public static class TypedMathSbyteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static sbyte ChooseIfLower(this sbyte x, ushort other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
+    public static sbyte ChooseIfLower(this sbyte x, ushort other) => x < (sbyte)other ? x : (sbyte)other;
 
     /// <summary>
     /// Gets absolute difference between sbyte and byte

@@ -214,7 +214,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, byte other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, byte other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than char, otherwise char
@@ -222,7 +222,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, char other) => (char)(x > other ? x : other);
+    public static char ChooseIfHigher(this char x, char other) => x > other ? x : other;
 
     /// <summary>
     /// Returns char if higher than decimal, otherwise decimal
@@ -230,7 +230,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, decimal other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, decimal other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than double, otherwise double
@@ -238,7 +238,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, double other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, double other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than float, otherwise float
@@ -246,7 +246,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, float other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, float other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than int, otherwise int
@@ -254,7 +254,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, int other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, int other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than long, otherwise long
@@ -262,7 +262,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, long other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, long other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than sbyte, otherwise sbyte
@@ -270,7 +270,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, sbyte other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, sbyte other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than short, otherwise short
@@ -278,7 +278,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, short other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, short other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than uint, otherwise uint
@@ -286,7 +286,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, uint other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, uint other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than ulong, otherwise ulong
@@ -294,7 +294,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, ulong other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, ulong other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if higher than ushort, otherwise ushort
@@ -302,7 +302,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static char ChooseIfHigher(this char x, ushort other) => (char)(x > (char)other ? x : (char)other);
+    public static char ChooseIfHigher(this char x, ushort other) => x > (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than byte, otherwise byte
@@ -310,7 +310,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, byte other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, byte other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than char, otherwise char
@@ -318,7 +318,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, char other) => (char)(x < other ? x : other);
+    public static char ChooseIfLower(this char x, char other) => x < other ? x : other;
 
     /// <summary>
     /// Returns char if lower than decimal, otherwise decimal
@@ -326,7 +326,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, decimal other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, decimal other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than double, otherwise double
@@ -334,7 +334,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, double other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, double other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than float, otherwise float
@@ -342,7 +342,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, float other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, float other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than int, otherwise int
@@ -350,7 +350,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, int other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, int other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than long, otherwise long
@@ -358,7 +358,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, long other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, long other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than sbyte, otherwise sbyte
@@ -366,7 +366,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, sbyte other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, sbyte other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than short, otherwise short
@@ -374,7 +374,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, short other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, short other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than uint, otherwise uint
@@ -382,7 +382,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, uint other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, uint other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than ulong, otherwise ulong
@@ -390,7 +390,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, ulong other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, ulong other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Returns char if lower than ushort, otherwise ushort
@@ -398,7 +398,7 @@ public static class TypedMathCharExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static char ChooseIfLower(this char x, ushort other) => (char)(x < (char)other ? x : (char)other);
+    public static char ChooseIfLower(this char x, ushort other) => x < (char)other ? x : (char)other;
 
     /// <summary>
     /// Gets absolute difference between char and byte

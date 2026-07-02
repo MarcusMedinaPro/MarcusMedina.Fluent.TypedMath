@@ -214,7 +214,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, byte other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, byte other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than char, otherwise char
@@ -222,7 +222,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, char other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, char other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than decimal, otherwise decimal
@@ -230,7 +230,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, decimal other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, decimal other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than double, otherwise double
@@ -238,7 +238,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, double other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, double other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than float, otherwise float
@@ -246,7 +246,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, float other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, float other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than int, otherwise int
@@ -254,7 +254,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, int other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, int other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than long, otherwise long
@@ -262,7 +262,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, long other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, long other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than sbyte, otherwise sbyte
@@ -270,7 +270,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, sbyte other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, sbyte other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than short, otherwise short
@@ -278,7 +278,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, short other) => (short)(x > other ? x : other);
+    public static short ChooseIfHigher(this short x, short other) => x > other ? x : other;
 
     /// <summary>
     /// Returns short if higher than uint, otherwise uint
@@ -286,7 +286,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, uint other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, uint other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than ulong, otherwise ulong
@@ -294,7 +294,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, ulong other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, ulong other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if higher than ushort, otherwise ushort
@@ -302,7 +302,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static short ChooseIfHigher(this short x, ushort other) => (short)(x > (short)other ? x : (short)other);
+    public static short ChooseIfHigher(this short x, ushort other) => x > (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than byte, otherwise byte
@@ -310,7 +310,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, byte other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, byte other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than char, otherwise char
@@ -318,7 +318,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, char other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, char other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than decimal, otherwise decimal
@@ -326,7 +326,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, decimal other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, decimal other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than double, otherwise double
@@ -334,7 +334,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, double other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, double other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than float, otherwise float
@@ -342,7 +342,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, float other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, float other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than int, otherwise int
@@ -350,7 +350,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, int other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, int other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than long, otherwise long
@@ -358,7 +358,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, long other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, long other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than sbyte, otherwise sbyte
@@ -366,7 +366,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, sbyte other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, sbyte other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than short, otherwise short
@@ -374,7 +374,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, short other) => (short)(x < other ? x : other);
+    public static short ChooseIfLower(this short x, short other) => x < other ? x : other;
 
     /// <summary>
     /// Returns short if lower than uint, otherwise uint
@@ -382,7 +382,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, uint other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, uint other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than ulong, otherwise ulong
@@ -390,7 +390,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, ulong other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, ulong other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Returns short if lower than ushort, otherwise ushort
@@ -398,7 +398,7 @@ public static class TypedMathShortExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static short ChooseIfLower(this short x, ushort other) => (short)(x < (short)other ? x : (short)other);
+    public static short ChooseIfLower(this short x, ushort other) => x < (short)other ? x : (short)other;
 
     /// <summary>
     /// Gets absolute difference between short and byte

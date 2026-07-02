@@ -214,7 +214,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, byte other) => (byte)(x > other ? x : other);
+    public static byte ChooseIfHigher(this byte x, byte other) => x > other ? x : other;
 
     /// <summary>
     /// Returns byte if higher than char, otherwise char
@@ -222,7 +222,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, char other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, char other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than decimal, otherwise decimal
@@ -230,7 +230,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, decimal other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, decimal other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than double, otherwise double
@@ -238,7 +238,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, double other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, double other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than float, otherwise float
@@ -246,7 +246,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, float other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, float other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than int, otherwise int
@@ -254,7 +254,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, int other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, int other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than long, otherwise long
@@ -262,7 +262,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, long other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, long other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than sbyte, otherwise sbyte
@@ -270,7 +270,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, sbyte other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, sbyte other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than short, otherwise short
@@ -278,7 +278,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, short other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, short other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than uint, otherwise uint
@@ -286,7 +286,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, uint other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, uint other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than ulong, otherwise ulong
@@ -294,7 +294,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, ulong other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, ulong other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if higher than ushort, otherwise ushort
@@ -302,7 +302,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static byte ChooseIfHigher(this byte x, ushort other) => (byte)(x > (byte)other ? x : (byte)other);
+    public static byte ChooseIfHigher(this byte x, ushort other) => x > (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than byte, otherwise byte
@@ -310,7 +310,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, byte other) => (byte)(x < other ? x : other);
+    public static byte ChooseIfLower(this byte x, byte other) => x < other ? x : other;
 
     /// <summary>
     /// Returns byte if lower than char, otherwise char
@@ -318,7 +318,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, char other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, char other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than decimal, otherwise decimal
@@ -326,7 +326,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, decimal other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, decimal other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than double, otherwise double
@@ -334,7 +334,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, double other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, double other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than float, otherwise float
@@ -342,7 +342,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, float other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, float other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than int, otherwise int
@@ -350,7 +350,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, int other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, int other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than long, otherwise long
@@ -358,7 +358,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, long other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, long other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than sbyte, otherwise sbyte
@@ -366,7 +366,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, sbyte other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, sbyte other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than short, otherwise short
@@ -374,7 +374,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, short other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, short other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than uint, otherwise uint
@@ -382,7 +382,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, uint other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, uint other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than ulong, otherwise ulong
@@ -390,7 +390,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, ulong other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, ulong other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Returns byte if lower than ushort, otherwise ushort
@@ -398,7 +398,7 @@ public static class TypedMathByteExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static byte ChooseIfLower(this byte x, ushort other) => (byte)(x < (byte)other ? x : (byte)other);
+    public static byte ChooseIfLower(this byte x, ushort other) => x < (byte)other ? x : (byte)other;
 
     /// <summary>
     /// Gets absolute difference between byte and byte

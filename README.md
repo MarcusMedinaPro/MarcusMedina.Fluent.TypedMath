@@ -13,6 +13,8 @@
 
 **Type-safe mathematical operations in C# with compile-time guarantees**
 
+> **Story:** _TODO — ask Marcus for the real background behind this package._
+
 Build mathematical expressions with strong typing to prevent unit mismatches and ensure correctness at compile time.
 
 ---
@@ -39,7 +41,7 @@ dotnet add package MarcusMedina.Fluent.TypedMath
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/blob/main/LICENSE) file for details.
 
 **Version:** 0.2.0 | **Updated:** 2025-03-16
 

@@ -9,19 +9,16 @@
 		<RootNamespace>MarcusMedinaPro.TypedMath</RootNamespace>
 
 		<PackageId>MarcusMedina.Fluent.TypedMath</PackageId>
-		<PackageVersion>2.0.1</PackageVersion>
 
-		<Version>2.1.2</Version>
-		<AssemblyVersion>2.0.1</AssemblyVersion>
-		<FileVersion>2.0.1</FileVersion>
+		<Version>2.1.3</Version>
 
 		<Authors>Marcus Medina</Authors>
 		<Company>MarcusMedina</Company>
 		<Product>FluentBuilders</Product>
 		<Copyright>Copyright (c) Marcus Medina, 2019-2025.</Copyright>
 		<Description>Verbose math operations for better code readability. Helps with dyscalculia by making calculations explicit and readable.</Description>
-		<PackageProjectUrl>https://github.com/MarcusMedinaPro/TypedMath/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/MarcusMedinaPro/TypedMath/</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>math;extensions;readability;dyscalculia;verbose;calculations;csharp;dotnet;net10</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>

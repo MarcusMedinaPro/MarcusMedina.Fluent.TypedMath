@@ -1,9 +1,11 @@
-﻿// ----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathInt128Extension.cs" company="MarcusMedinaPro">
 //     By Marcus Medina, 2019 - http://MarcusMedina.Pro This file is subject to the terms and
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
+
+using MarcusMedinaPro.TypedMath.Core;
 
 namespace MarcusMedinaPro.TypedMath.Int128Extension;
 
@@ -22,7 +24,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, byte addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, byte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds char to Int128
@@ -30,7 +32,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, char addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, char addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds int to Int128
@@ -38,7 +40,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, int addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, int addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds Int128 to Int128
@@ -46,7 +48,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, Int128 addend) => x + addend;
+    public static Int128 Add(this Int128 x, Int128 addend) => TypedMathCore.Add(x, addend);
 
     /// <summary>
     /// Adds long to Int128
@@ -54,7 +56,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, long addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, long addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds sbyte to Int128
@@ -62,7 +64,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, sbyte addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, sbyte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds short to Int128
@@ -70,7 +72,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, short addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, short addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds uint to Int128
@@ -78,7 +80,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, uint addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, uint addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ulong to Int128
@@ -86,7 +88,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, ulong addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, ulong addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ushort to Int128
@@ -94,7 +96,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static Int128 Add(this Int128 x, ushort addend) => x + (Int128)addend;
+    public static Int128 Add(this Int128 x, ushort addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -102,7 +104,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, byte percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, byte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -110,7 +112,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, char percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, char percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -118,7 +120,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, int percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, int percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -126,7 +128,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, Int128 percent) => x + (x * percent / 100);
+    public static Int128 AddPercent(this Int128 x, Int128 percent) => TypedMathCore.AddPercent(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -134,7 +136,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, long percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, long percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -142,7 +144,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, sbyte percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, sbyte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -150,7 +152,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, short percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, short percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -158,7 +160,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, uint percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, uint percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -166,7 +168,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, ulong percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, ulong percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to Int128
@@ -174,7 +176,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static Int128 AddPercent(this Int128 x, ushort percent) => x + (x * (Int128)percent / 100);
+    public static Int128 AddPercent(this Int128 x, ushort percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Returns Int128 if higher than byte, otherwise byte
@@ -182,7 +184,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, byte other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, byte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than char, otherwise char
@@ -190,7 +192,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, char other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, char other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than int, otherwise int
@@ -198,7 +200,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, int other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, int other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than Int128, otherwise Int128
@@ -206,7 +208,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, Int128 other) => x > other ? x : other;
+    public static Int128 ChooseIfHigher(this Int128 x, Int128 other) => TypedMathCore.ChooseIfHigher(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than long, otherwise long
@@ -214,7 +216,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, long other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, long other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than sbyte, otherwise sbyte
@@ -222,7 +224,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, sbyte other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, sbyte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than short, otherwise short
@@ -230,7 +232,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, short other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, short other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than uint, otherwise uint
@@ -238,7 +240,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, uint other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, uint other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than ulong, otherwise ulong
@@ -246,7 +248,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, ulong other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, ulong other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if higher than ushort, otherwise ushort
@@ -254,7 +256,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static Int128 ChooseIfHigher(this Int128 x, ushort other) => x > (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfHigher(this Int128 x, ushort other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than byte, otherwise byte
@@ -262,7 +264,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, byte other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, byte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than char, otherwise char
@@ -270,7 +272,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, char other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, char other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than int, otherwise int
@@ -278,7 +280,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, int other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, int other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than Int128, otherwise Int128
@@ -286,7 +288,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, Int128 other) => x < other ? x : other;
+    public static Int128 ChooseIfLower(this Int128 x, Int128 other) => TypedMathCore.ChooseIfLower(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than long, otherwise long
@@ -294,7 +296,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, long other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, long other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than sbyte, otherwise sbyte
@@ -302,7 +304,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, sbyte other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, sbyte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than short, otherwise short
@@ -310,7 +312,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, short other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, short other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than uint, otherwise uint
@@ -318,7 +320,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, uint other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, uint other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than ulong, otherwise ulong
@@ -326,7 +328,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, ulong other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, ulong other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns Int128 if lower than ushort, otherwise ushort
@@ -334,7 +336,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static Int128 ChooseIfLower(this Int128 x, ushort other) => x < (Int128)other ? x : (Int128)other;
+    public static Int128 ChooseIfLower(this Int128 x, ushort other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and byte
@@ -343,7 +345,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, byte other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and char
@@ -352,7 +354,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, char other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and int
@@ -361,7 +363,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, int other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and Int128
@@ -370,7 +372,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, Int128 other) => x > other ? x - other : x < other ? other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, Int128 other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and long
@@ -379,7 +381,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, long other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, long other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and sbyte
@@ -388,7 +390,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, sbyte other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and short
@@ -397,7 +399,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, short other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and uint
@@ -406,7 +408,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, uint other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, uint other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and ulong
@@ -415,7 +417,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, ulong other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and ushort
@@ -424,7 +426,7 @@ public static class TypedMathInt128Extension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static Int128 DiferenceFrom(this Int128 x, ushort other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DiferenceFrom(this Int128 x, ushort other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and byte
@@ -432,7 +434,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, byte other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and char
@@ -440,7 +442,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, char other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and int
@@ -448,7 +450,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, int other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and Int128
@@ -456,7 +458,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, Int128 other) => x > other ? x - other : x < other ? other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, Int128 other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and long
@@ -464,7 +466,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, long other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, long other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and sbyte
@@ -472,7 +474,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, sbyte other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and short
@@ -480,7 +482,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, short other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and uint
@@ -488,7 +490,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, uint other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, uint other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and ulong
@@ -496,7 +498,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, ulong other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between Int128 and ushort
@@ -504,7 +506,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static Int128 DifferenceFrom(this Int128 x, ushort other) => x > (Int128)other ? x - (Int128)other : x < (Int128)other ? (Int128)other - x : 0;
+    public static Int128 DifferenceFrom(this Int128 x, ushort other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Divides Int128 by byte
@@ -512,7 +514,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, byte divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, byte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by char
@@ -520,7 +522,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, char divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, char divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by int
@@ -528,7 +530,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, int divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, int divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by Int128
@@ -536,7 +538,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, Int128 divisor) => x / divisor;
+    public static Int128 DividedBy(this Int128 x, Int128 divisor) => TypedMathCore.DividedBy(x, divisor);
 
     /// <summary>
     /// Divides Int128 by long
@@ -544,7 +546,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, long divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, long divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by sbyte
@@ -552,7 +554,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, sbyte divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, sbyte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by short
@@ -560,7 +562,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, short divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, short divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by uint
@@ -568,7 +570,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, uint divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, uint divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by ulong
@@ -576,7 +578,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, ulong divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, ulong divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides Int128 by ushort
@@ -584,7 +586,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static Int128 DividedBy(this Int128 x, ushort divisor) => x / (Int128)divisor;
+    public static Int128 DividedBy(this Int128 x, ushort divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Checks if Int128 is greater than byte
@@ -592,7 +594,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, byte other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, byte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than char
@@ -600,7 +602,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, char other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, char other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than int
@@ -608,7 +610,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, int other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, int other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than Int128
@@ -616,7 +618,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, Int128 other) => x > other;
+    public static bool GreaterThan(this Int128 x, Int128 other) => TypedMathCore.GreaterThan(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than long
@@ -624,7 +626,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, long other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, long other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than sbyte
@@ -632,7 +634,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, sbyte other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, sbyte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than short
@@ -640,7 +642,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, short other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, short other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than uint
@@ -648,7 +650,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, uint other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, uint other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than ulong
@@ -656,7 +658,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, ulong other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, ulong other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is greater than ushort
@@ -664,7 +666,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this Int128 x, ushort other) => x > (Int128)other;
+    public static bool GreaterThan(this Int128 x, ushort other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals byte
@@ -672,7 +674,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, byte other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, byte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals char
@@ -680,7 +682,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, char other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, char other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals int
@@ -688,7 +690,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, int other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, int other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals Int128
@@ -696,7 +698,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, Int128 other) => x == other;
+    public static bool IsEqualTo(this Int128 x, Int128 other) => TypedMathCore.IsEqualTo(x, other);
 
     /// <summary>
     /// Checks if Int128 equals long
@@ -704,7 +706,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, long other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, long other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals sbyte
@@ -712,7 +714,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, sbyte other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, sbyte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals short
@@ -720,7 +722,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, short other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, short other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals uint
@@ -728,7 +730,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, uint other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, uint other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals ulong
@@ -736,7 +738,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, ulong other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, ulong other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 equals ushort
@@ -744,14 +746,14 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this Int128 x, ushort other) => x == (Int128)other;
+    public static bool IsEqualTo(this Int128 x, ushort other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Gets boolean true if Int128 is less than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this Int128 x) => x < 0;
+    public static bool IsNegative(this Int128 x) => TypedMathCore.IsNegative(x);
 
     /// <summary>
     /// Checks if Int128 does not equal byte
@@ -759,7 +761,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, byte other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, byte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal char
@@ -767,7 +769,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, char other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, char other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal int
@@ -775,7 +777,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, int other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, int other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal Int128
@@ -783,7 +785,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, Int128 other) => x != other;
+    public static bool IsNotEqualTo(this Int128 x, Int128 other) => TypedMathCore.IsNotEqualTo(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal long
@@ -791,7 +793,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, long other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, long other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal sbyte
@@ -799,7 +801,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, sbyte other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, sbyte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal short
@@ -807,7 +809,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, short other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, short other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal uint
@@ -815,7 +817,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, uint other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, uint other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal ulong
@@ -823,7 +825,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, ulong other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, ulong other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if Int128 does not equal ushort
@@ -831,14 +833,14 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this Int128 x, ushort other) => x != (Int128)other;
+    public static bool IsNotEqualTo(this Int128 x, ushort other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Gets boolean true if Int128 is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is positive</returns>
-    public static bool IsPositive(this Int128 x) => x > 0;
+    public static bool IsPositive(this Int128 x) => TypedMathCore.IsPositive(x);
 
     /// <summary>
     /// Checks if Int128 is less than byte
@@ -846,7 +848,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, byte other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, byte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than char
@@ -854,7 +856,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, char other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, char other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than int
@@ -862,7 +864,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, int other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, int other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than Int128
@@ -870,7 +872,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, Int128 other) => x < other;
+    public static bool LessThan(this Int128 x, Int128 other) => TypedMathCore.LessThan(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than long
@@ -878,7 +880,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, long other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, long other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than sbyte
@@ -886,7 +888,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, sbyte other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, sbyte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than short
@@ -894,7 +896,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, short other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, short other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than uint
@@ -902,7 +904,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, uint other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, uint other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than ulong
@@ -910,7 +912,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, ulong other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, ulong other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if Int128 is less than ushort
@@ -918,7 +920,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this Int128 x, ushort other) => x < (Int128)other;
+    public static bool LessThan(this Int128 x, ushort other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Gets remainder of Int128 divided by byte
@@ -926,7 +928,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, byte divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, byte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by char
@@ -934,7 +936,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, char divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, char divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by int
@@ -942,7 +944,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, int divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, int divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by Int128
@@ -950,7 +952,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, Int128 divisor) => x % divisor;
+    public static Int128 Modulus(this Int128 x, Int128 divisor) => TypedMathCore.Modulus(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by long
@@ -958,7 +960,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, long divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, long divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by sbyte
@@ -966,7 +968,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, sbyte divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, sbyte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by short
@@ -974,7 +976,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, short divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, short divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by uint
@@ -982,7 +984,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, uint divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, uint divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by ulong
@@ -990,7 +992,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, ulong divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, ulong divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of Int128 divided by ushort
@@ -998,7 +1000,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static Int128 Modulus(this Int128 x, ushort divisor) => x % (Int128)divisor;
+    public static Int128 Modulus(this Int128 x, ushort divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Multiplies Int128 with byte
@@ -1006,7 +1008,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, byte multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, byte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with char
@@ -1014,7 +1016,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, char multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, char multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with int
@@ -1022,7 +1024,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, int multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, int multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with Int128
@@ -1030,7 +1032,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, Int128 multiplier) => x * multiplier;
+    public static Int128 MultipliedWith(this Int128 x, Int128 multiplier) => TypedMathCore.MultipliedWith(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with long
@@ -1038,7 +1040,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, long multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, long multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with sbyte
@@ -1046,7 +1048,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, sbyte multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, sbyte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with short
@@ -1054,7 +1056,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, short multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, short multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with uint
@@ -1062,7 +1064,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, uint multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, uint multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with ulong
@@ -1070,7 +1072,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, ulong multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, ulong multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies Int128 with ushort
@@ -1078,7 +1080,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static Int128 MultipliedWith(this Int128 x, ushort multiplier) => x * (Int128)multiplier;
+    public static Int128 MultipliedWith(this Int128 x, ushort multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Calculates Int128 percent of byte
@@ -1086,7 +1088,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, byte number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, byte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of char
@@ -1094,7 +1096,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, char number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, char number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of int
@@ -1102,7 +1104,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, int number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, int number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of Int128
@@ -1110,7 +1112,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, Int128 number) => x / 100 * number;
+    public static Int128 PercentOf(this Int128 x, Int128 number) => TypedMathCore.PercentOf(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of long
@@ -1118,7 +1120,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, long number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, long number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of sbyte
@@ -1126,7 +1128,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, sbyte number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, sbyte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of short
@@ -1134,7 +1136,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, short number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, short number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of uint
@@ -1142,7 +1144,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, uint number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, uint number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of ulong
@@ -1150,7 +1152,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, ulong number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, ulong number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates Int128 percent of ushort
@@ -1158,7 +1160,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static Int128 PercentOf(this Int128 x, ushort number) => x / 100 * (Int128)number;
+    public static Int128 PercentOf(this Int128 x, ushort number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Subtracts byte from Int128
@@ -1167,7 +1169,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, byte subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from Int128
@@ -1176,7 +1178,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, char subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from Int128
@@ -1185,7 +1187,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, int subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts Int128 from Int128
@@ -1194,7 +1196,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, Int128 subtrahend) => x - subtrahend;
+    public static Int128 Substract(this Int128 x, Int128 subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from Int128
@@ -1203,7 +1205,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, long subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, long subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from Int128
@@ -1212,7 +1214,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, sbyte subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from Int128
@@ -1221,7 +1223,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, short subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from Int128
@@ -1230,7 +1232,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, uint subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, uint subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from Int128
@@ -1239,7 +1241,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, ulong subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from Int128
@@ -1248,7 +1250,7 @@ public static class TypedMathInt128Extension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static Int128 Substract(this Int128 x, ushort subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Substract(this Int128 x, ushort subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1257,7 +1259,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, byte percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1266,7 +1268,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, char percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1275,7 +1277,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, int percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1284,7 +1286,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, Int128 percent) => x - (x * percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, Int128 percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1293,7 +1295,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, long percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, long percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1302,7 +1304,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, sbyte percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1311,7 +1313,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, short percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1320,7 +1322,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, uint percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, uint percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1329,7 +1331,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, ulong percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of Int128
@@ -1338,7 +1340,7 @@ public static class TypedMathInt128Extension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static Int128 SubstractPercent(this Int128 x, ushort percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubstractPercent(this Int128 x, ushort percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts byte from Int128
@@ -1346,7 +1348,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, byte subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from Int128
@@ -1354,7 +1356,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, char subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from Int128
@@ -1362,7 +1364,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, int subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts Int128 from Int128
@@ -1370,7 +1372,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, Int128 subtrahend) => x - subtrahend;
+    public static Int128 Subtract(this Int128 x, Int128 subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from Int128
@@ -1378,7 +1380,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, long subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, long subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from Int128
@@ -1386,7 +1388,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, sbyte subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from Int128
@@ -1394,7 +1396,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, short subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from Int128
@@ -1402,7 +1404,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, uint subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, uint subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from Int128
@@ -1410,7 +1412,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, ulong subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from Int128
@@ -1418,7 +1420,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static Int128 Subtract(this Int128 x, ushort subtrahend) => x - (Int128)subtrahend;
+    public static Int128 Subtract(this Int128 x, ushort subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1426,7 +1428,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, byte percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1434,7 +1436,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, char percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1442,7 +1444,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, int percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1450,7 +1452,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, Int128 percent) => x - (x * percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, Int128 percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1458,7 +1460,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, long percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, long percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1466,7 +1468,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, sbyte percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1474,7 +1476,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, short percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1482,7 +1484,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, uint percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, uint percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1490,7 +1492,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, ulong percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from Int128
@@ -1498,7 +1500,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static Int128 SubtractPercent(this Int128 x, ushort percent) => x - (x * (Int128)percent / 100);
+    public static Int128 SubtractPercent(this Int128 x, ushort percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Decreases all values in the array by the specified amount
@@ -1507,8 +1509,7 @@ public static class TypedMathInt128Extension
     /// <param name="dec">The amount to subtract</param>
     /// <returns>Array with all values decreased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static Int128[] DecreaseAllValuesWith(this Int128[] array, Int128 dec) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.DecreaseAllValuesWith(array, dec);
+    public static Int128[] DecreaseAllValuesWith(this Int128[] array, Int128 dec) => TypedMathCore.DecreaseAllValuesWith(array, dec);
 
     /// <summary>
     /// Peeks the average value of the numbers in the array
@@ -1516,8 +1517,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The average value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetAverage(). This method will be removed in v2.0.", false)]
-    public static double GetAverage(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetAverage(array);
+    public static double GetAverage(this Int128[] array) => TypedMathCore.GetAverage(array);
 
     /// <summary>
     /// Gets the first half of the array
@@ -1525,8 +1525,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The first half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetFirstHalf(). This method will be removed in v2.0.", false)]
-    public static Int128[] GetFirstHalf(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetFirstHalf(array);
+    public static Int128[] GetFirstHalf(this Int128[] array) => TypedMathCore.GetFirstHalf(array);
 
     /// <summary>
     /// Gets the first value in the array
@@ -1534,8 +1533,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The first value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetFirstValue(). This method will be removed in v2.0.", false)]
-    public static Int128 GetFirstValue(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetFirstValue(array);
+    public static Int128 GetFirstValue(this Int128[] array) => TypedMathCore.GetFirstValue(array);
 
     /// <summary>
     /// Gets the highest value in the array
@@ -1543,8 +1541,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The highest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetHighestValue(). This method will be removed in v2.0.", false)]
-    public static Int128 GetHighestValue(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetHighestValue(array);
+    public static Int128 GetHighestValue(this Int128[] array) => TypedMathCore.GetHighestValue(array);
 
     /// <summary>
     /// Gets the last half of the array
@@ -1552,8 +1549,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The last half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetLastHalf(). This method will be removed in v2.0.", false)]
-    public static Int128[] GetLastHalf(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetLastHalf(array);
+    public static Int128[] GetLastHalf(this Int128[] array) => TypedMathCore.GetLastHalf(array);
 
     /// <summary>
     /// Gets the last value in the array
@@ -1561,8 +1557,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The last value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetLastValue(). This method will be removed in v2.0.", false)]
-    public static Int128 GetLastValue(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetLastValue(array);
+    public static Int128 GetLastValue(this Int128[] array) => TypedMathCore.GetLastValue(array);
 
     /// <summary>
     /// Gets the lowest value in the array
@@ -1570,8 +1565,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The lowest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetLowestValue(). This method will be removed in v2.0.", false)]
-    public static Int128 GetLowestValue(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetLowestValue(array);
+    public static Int128 GetLowestValue(this Int128[] array) => TypedMathCore.GetLowestValue(array);
 
     /// <summary>
     /// Gets the middle portion of the array
@@ -1579,8 +1573,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The middle portion of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetMiddle(). This method will be removed in v2.0.", false)]
-    public static Int128[] GetMiddle(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetMiddle(array);
+    public static Int128[] GetMiddle(this Int128[] array) => TypedMathCore.GetMiddle(array);
 
     /// <summary>
     /// Gets the middle value in the array
@@ -1588,8 +1581,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The middle value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetMiddleValue(). This method will be removed in v2.0.", false)]
-    public static Int128 GetMiddleValue(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetMiddleValue(array);
+    public static Int128 GetMiddleValue(this Int128[] array) => TypedMathCore.GetMiddleValue(array);
 
     /// <summary>
     /// Gets all values higher than or equal to the specified value
@@ -1598,8 +1590,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values higher than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
-    public static Int128[] GetValuesHigherThan(this Int128[] array, Int128 x) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetValuesHigherThan(array, x);
+    public static Int128[] GetValuesHigherThan(this Int128[] array, Int128 x) => TypedMathCore.GetValuesHigherThan(array, x);
 
     /// <summary>
     /// Gets all values lower than or equal to the specified value
@@ -1608,8 +1599,7 @@ public static class TypedMathInt128Extension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values lower than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
-    public static Int128[] GetValuesLowerThan(this Int128[] array, Int128 x) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.GetValuesLowerThan(array, x);
+    public static Int128[] GetValuesLowerThan(this Int128[] array, Int128 x) => TypedMathCore.GetValuesLowerThan(array, x);
 
     /// <summary>
     /// Increases all values in the array by the specified amount
@@ -1618,8 +1608,7 @@ public static class TypedMathInt128Extension
     /// <param name="add">The amount to add</param>
     /// <returns>Array with all values increased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static Int128[] IncreaseAllValuesWith(this Int128[] array, Int128 add) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.IncreaseAllValuesWith(array, add);
+    public static Int128[] IncreaseAllValuesWith(this Int128[] array, Int128 add) => TypedMathCore.IncreaseAllValuesWith(array, add);
 
     /// <summary>
     /// Rotates the numbers to the left
@@ -1627,8 +1616,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.RotateLeft(). This method will be removed in v2.0.", false)]
-    public static Int128[] RotateLeft(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.RotateLeft(array);
+    public static Int128[] RotateLeft(this Int128[] array) => TypedMathCore.RotateLeft(array);
 
     /// <summary>
     /// Rotates the numbers to the right
@@ -1636,8 +1624,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.RotateRight(). This method will be removed in v2.0.", false)]
-    public static Int128[] RotateRight(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.RotateRight(array);
+    public static Int128[] RotateRight(this Int128[] array) => TypedMathCore.RotateRight(array);
 
     /// <summary>
     /// Sets a new size for the array
@@ -1646,8 +1633,7 @@ public static class TypedMathInt128Extension
     /// <param name="size">The new size</param>
     /// <returns>Array with new size</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SetNewArraySize(). This method will be removed in v2.0.", false)]
-    public static Int128[] SetNewArraySize(this Int128[] array, int size) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SetNewArraySize(array, size);
+    public static Int128[] SetNewArraySize(this Int128[] array, int size) => TypedMathCore.SetNewArraySize(array, size);
 
     /// <summary>
     /// Sorts the array in ascending order
@@ -1655,8 +1641,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in ascending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SortArrayAsc(). This method will be removed in v2.0.", false)]
-    public static Int128[] SortArrayAsc(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SortArrayAsc(array);
+    public static Int128[] SortArrayAsc(this Int128[] array) => TypedMathCore.SortArrayAsc(array);
 
     /// <summary>
     /// Sorts the array in descending order
@@ -1664,8 +1649,7 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in descending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SortArrayDesc(). This method will be removed in v2.0.", false)]
-    public static Int128[] SortArrayDesc(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SortArrayDesc(array);
+    public static Int128[] SortArrayDesc(this Int128[] array) => TypedMathCore.SortArrayDesc(array);
 
     /// <summary>
     /// Sums all values in the array
@@ -1673,6 +1657,5 @@ public static class TypedMathInt128Extension
     /// <param name="array">The array</param>
     /// <returns>The sum of all values</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SumAllValues(). This method will be removed in v2.0.", false)]
-    public static Int128 SumAllValues(this Int128[] array) =>
-        MarcusMedinaPro.TypedMath.Int128Collections.TypedMathInt128Collections.SumAllValues(array);
+    public static Int128 SumAllValues(this Int128[] array) => TypedMathCore.SumAllValues(array);
 }

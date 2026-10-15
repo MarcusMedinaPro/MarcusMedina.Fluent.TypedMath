@@ -1,9 +1,11 @@
-﻿// ----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathUintExtension.cs" company="MarcusMedinaPro">
 //     By Marcus Medina, 2019 - http://MarcusMedina.Pro This file is subject to the terms and
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
+
+using MarcusMedinaPro.TypedMath.Core;
 
 namespace MarcusMedinaPro.TypedMath.UintExtension;
 
@@ -22,7 +24,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, byte addend) => x + (uint)addend;
+    public static uint Add(this uint x, byte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds char to uint
@@ -30,7 +32,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, char addend) => x + (uint)addend;
+    public static uint Add(this uint x, char addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds decimal to uint
@@ -38,7 +40,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, decimal addend) => x + (uint)addend;
+    public static uint Add(this uint x, decimal addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds double to uint
@@ -46,7 +48,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, double addend) => x + (uint)addend;
+    public static uint Add(this uint x, double addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds float to uint
@@ -54,7 +56,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, float addend) => x + (uint)addend;
+    public static uint Add(this uint x, float addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds int to uint
@@ -62,7 +64,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, int addend) => x + (uint)addend;
+    public static uint Add(this uint x, int addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds long to uint
@@ -70,7 +72,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, long addend) => x + (uint)addend;
+    public static uint Add(this uint x, long addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds sbyte to uint
@@ -78,7 +80,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, sbyte addend) => x + (uint)addend;
+    public static uint Add(this uint x, sbyte addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds short to uint
@@ -86,7 +88,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, short addend) => x + (uint)addend;
+    public static uint Add(this uint x, short addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds uint to uint
@@ -94,7 +96,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, uint addend) => x + addend;
+    public static uint Add(this uint x, uint addend) => TypedMathCore.Add(x, addend);
 
     /// <summary>
     /// Adds ulong to uint
@@ -102,7 +104,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, ulong addend) => x + (uint)addend;
+    public static uint Add(this uint x, ulong addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds ushort to uint
@@ -110,7 +112,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="addend">The value to add</param>
     /// <returns>The sum of both values</returns>
-    public static uint Add(this uint x, ushort addend) => x + (uint)addend;
+    public static uint Add(this uint x, ushort addend) => TypedMathCore.AddOther(x, addend);
 
     /// <summary>
     /// Adds percentage to uint
@@ -118,7 +120,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, byte percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, byte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -126,7 +128,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, char percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, char percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -134,7 +136,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, decimal percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, decimal percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -142,7 +144,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, double percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, double percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -150,7 +152,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, float percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, float percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -158,7 +160,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, int percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, int percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -166,7 +168,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, long percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, long percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -174,7 +176,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, sbyte percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, sbyte percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -182,7 +184,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, short percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, short percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -190,7 +192,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, uint percent) => x + (x * percent / 100);
+    public static uint AddPercent(this uint x, uint percent) => TypedMathCore.AddPercent(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -198,7 +200,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, ulong percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, ulong percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Adds percentage to uint
@@ -206,7 +208,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to add</param>
     /// <returns>The value after adding the percentage</returns>
-    public static uint AddPercent(this uint x, ushort percent) => x + (x * (uint)percent / 100);
+    public static uint AddPercent(this uint x, ushort percent) => TypedMathCore.AddPercentOther(x, percent);
 
     /// <summary>
     /// Returns uint if higher than byte, otherwise byte
@@ -214,7 +216,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, byte other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, byte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than char, otherwise char
@@ -222,7 +224,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, char other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, char other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than decimal, otherwise decimal
@@ -230,7 +232,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, decimal other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, decimal other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than double, otherwise double
@@ -238,7 +240,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, double other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, double other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than float, otherwise float
@@ -246,7 +248,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, float other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, float other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than int, otherwise int
@@ -254,7 +256,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, int other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, int other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than long, otherwise long
@@ -262,7 +264,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, long other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, long other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than sbyte, otherwise sbyte
@@ -270,7 +272,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, sbyte other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, sbyte other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than short, otherwise short
@@ -278,7 +280,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, short other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, short other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than uint, otherwise uint
@@ -286,7 +288,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, uint other) => x > other ? x : other;
+    public static uint ChooseIfHigher(this uint x, uint other) => TypedMathCore.ChooseIfHigher(x, other);
 
     /// <summary>
     /// Returns uint if higher than ulong, otherwise ulong
@@ -294,7 +296,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, ulong other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, ulong other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if higher than ushort, otherwise ushort
@@ -302,7 +304,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The higher of the two values</returns>
-    public static uint ChooseIfHigher(this uint x, ushort other) => x > (uint)other ? x : (uint)other;
+    public static uint ChooseIfHigher(this uint x, ushort other) => TypedMathCore.ChooseIfHigherOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than byte, otherwise byte
@@ -310,7 +312,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, byte other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, byte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than char, otherwise char
@@ -318,7 +320,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, char other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, char other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than decimal, otherwise decimal
@@ -326,7 +328,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, decimal other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, decimal other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than double, otherwise double
@@ -334,7 +336,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, double other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, double other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than float, otherwise float
@@ -342,7 +344,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, float other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, float other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than int, otherwise int
@@ -350,7 +352,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, int other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, int other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than long, otherwise long
@@ -358,7 +360,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, long other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, long other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than sbyte, otherwise sbyte
@@ -366,7 +368,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, sbyte other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, sbyte other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than short, otherwise short
@@ -374,7 +376,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, short other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, short other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than uint, otherwise uint
@@ -382,7 +384,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, uint other) => x < other ? x : other;
+    public static uint ChooseIfLower(this uint x, uint other) => TypedMathCore.ChooseIfLower(x, other);
 
     /// <summary>
     /// Returns uint if lower than ulong, otherwise ulong
@@ -390,7 +392,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, ulong other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, ulong other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Returns uint if lower than ushort, otherwise ushort
@@ -398,7 +400,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The lower of the two values</returns>
-    public static uint ChooseIfLower(this uint x, ushort other) => x < (uint)other ? x : (uint)other;
+    public static uint ChooseIfLower(this uint x, ushort other) => TypedMathCore.ChooseIfLowerOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and byte
@@ -407,7 +409,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, byte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and char
@@ -416,7 +418,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, char other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and decimal
@@ -425,7 +427,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, decimal other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, decimal other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and double
@@ -434,7 +436,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, double other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, double other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and float
@@ -443,7 +445,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, float other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, float other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and int
@@ -452,7 +454,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, int other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and long
@@ -461,7 +463,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, long other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, long other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and sbyte
@@ -470,7 +472,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, sbyte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and short
@@ -479,7 +481,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, short other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and uint
@@ -488,7 +490,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, uint other) => x > other ? x - other : x < other ? other - x : 0;
+    public static uint DiferenceFrom(this uint x, uint other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and ulong
@@ -497,7 +499,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, ulong other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and ushort
@@ -506,7 +508,7 @@ public static class TypedMathUintExtension
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
-    public static uint DiferenceFrom(this uint x, ushort other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DiferenceFrom(this uint x, ushort other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and byte
@@ -514,7 +516,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, byte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, byte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and char
@@ -522,7 +524,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, char other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, char other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and decimal
@@ -530,7 +532,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, decimal other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, decimal other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and double
@@ -538,7 +540,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, double other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, double other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and float
@@ -546,7 +548,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, float other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, float other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and int
@@ -554,7 +556,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, int other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, int other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and long
@@ -562,7 +564,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, long other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, long other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and sbyte
@@ -570,7 +572,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, sbyte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, sbyte other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and short
@@ -578,7 +580,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, short other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, short other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and uint
@@ -586,7 +588,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, uint other) => x > other ? x - other : x < other ? other - x : 0;
+    public static uint DifferenceFrom(this uint x, uint other) => TypedMathCore.DifferenceFrom(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and ulong
@@ -594,7 +596,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, ulong other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, ulong other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Gets absolute difference between uint and ushort
@@ -602,7 +604,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>The absolute difference between the values</returns>
-    public static uint DifferenceFrom(this uint x, ushort other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
+    public static uint DifferenceFrom(this uint x, ushort other) => TypedMathCore.DifferenceFromOther(x, other);
 
     /// <summary>
     /// Divides uint by byte
@@ -610,7 +612,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, byte divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, byte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by char
@@ -618,7 +620,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, char divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, char divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by decimal
@@ -626,7 +628,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, decimal divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, decimal divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by double
@@ -634,7 +636,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, double divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, double divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by float
@@ -642,7 +644,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, float divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, float divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by int
@@ -650,7 +652,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, int divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, int divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by long
@@ -658,7 +660,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, long divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, long divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by sbyte
@@ -666,7 +668,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, sbyte divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, sbyte divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by short
@@ -674,7 +676,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, short divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, short divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by uint
@@ -682,7 +684,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, uint divisor) => x / divisor;
+    public static uint DividedBy(this uint x, uint divisor) => TypedMathCore.DividedBy(x, divisor);
 
     /// <summary>
     /// Divides uint by ulong
@@ -690,7 +692,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, ulong divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, ulong divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Divides uint by ushort
@@ -698,7 +700,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The result of the division</returns>
-    public static uint DividedBy(this uint x, ushort divisor) => x / (uint)divisor;
+    public static uint DividedBy(this uint x, ushort divisor) => TypedMathCore.DividedByOther(x, divisor);
 
     /// <summary>
     /// Checks if uint is greater than byte
@@ -706,7 +708,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, byte other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, byte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than char
@@ -714,7 +716,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, char other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, char other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than decimal
@@ -722,7 +724,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, decimal other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, decimal other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than double
@@ -730,7 +732,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, double other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, double other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than float
@@ -738,7 +740,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, float other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, float other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than int
@@ -746,7 +748,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, int other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, int other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than long
@@ -754,7 +756,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, long other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, long other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than sbyte
@@ -762,7 +764,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, sbyte other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, sbyte other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than short
@@ -770,7 +772,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, short other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, short other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than uint
@@ -778,7 +780,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, uint other) => x > other;
+    public static bool GreaterThan(this uint x, uint other) => TypedMathCore.GreaterThan(x, other);
 
     /// <summary>
     /// Checks if uint is greater than ulong
@@ -786,7 +788,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, ulong other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, ulong other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is greater than ushort
@@ -794,7 +796,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is greater than the other value</returns>
-    public static bool GreaterThan(this uint x, ushort other) => x > (uint)other;
+    public static bool GreaterThan(this uint x, ushort other) => TypedMathCore.GreaterThanOther(x, other);
 
     /// <summary>
     /// Checks if uint equals byte
@@ -802,7 +804,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, byte other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, byte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals char
@@ -810,7 +812,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, char other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, char other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals decimal
@@ -818,7 +820,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, decimal other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, decimal other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals double
@@ -826,7 +828,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, double other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, double other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals float
@@ -834,7 +836,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, float other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, float other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals int
@@ -842,7 +844,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, int other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, int other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals long
@@ -850,7 +852,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, long other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, long other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals sbyte
@@ -858,7 +860,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, sbyte other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, sbyte other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals short
@@ -866,7 +868,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, short other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, short other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals uint
@@ -874,7 +876,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, uint other) => x == other;
+    public static bool IsEqualTo(this uint x, uint other) => TypedMathCore.IsEqualTo(x, other);
 
     /// <summary>
     /// Checks if uint equals ulong
@@ -882,7 +884,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, ulong other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, ulong other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint equals ushort
@@ -890,14 +892,14 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are equal</returns>
-    public static bool IsEqualTo(this uint x, ushort other) => x == (uint)other;
+    public static bool IsEqualTo(this uint x, ushort other) => TypedMathCore.IsEqualToOther(x, other);
 
     /// <summary>
     /// Gets boolean true if uint is less than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is negative</returns>
-    public static bool IsNegative(this uint x) => false;
+    public static bool IsNegative(this uint x) => TypedMathCore.IsNegative(x);
 
     /// <summary>
     /// Checks if uint does not equal byte
@@ -905,7 +907,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, byte other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, byte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal char
@@ -913,7 +915,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, char other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, char other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal decimal
@@ -921,7 +923,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, decimal other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, decimal other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal double
@@ -929,7 +931,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, double other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, double other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal float
@@ -937,7 +939,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, float other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, float other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal int
@@ -945,7 +947,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, int other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, int other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal long
@@ -953,7 +955,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, long other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, long other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal sbyte
@@ -961,7 +963,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, sbyte other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, sbyte other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal short
@@ -969,7 +971,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, short other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, short other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal uint
@@ -977,7 +979,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, uint other) => x != other;
+    public static bool IsNotEqualTo(this uint x, uint other) => TypedMathCore.IsNotEqualTo(x, other);
 
     /// <summary>
     /// Checks if uint does not equal ulong
@@ -985,7 +987,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, ulong other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, ulong other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Checks if uint does not equal ushort
@@ -993,14 +995,14 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if values are not equal</returns>
-    public static bool IsNotEqualTo(this uint x, ushort other) => x != (uint)other;
+    public static bool IsNotEqualTo(this uint x, ushort other) => TypedMathCore.IsNotEqualToOther(x, other);
 
     /// <summary>
     /// Gets boolean true if uint is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
     /// <returns>True if the value is positive</returns>
-    public static bool IsPositive(this uint x) => x > 0;
+    public static bool IsPositive(this uint x) => TypedMathCore.IsPositive(x);
 
     /// <summary>
     /// Checks if uint is less than byte
@@ -1008,7 +1010,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, byte other) => x < (uint)other;
+    public static bool LessThan(this uint x, byte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than char
@@ -1016,7 +1018,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, char other) => x < (uint)other;
+    public static bool LessThan(this uint x, char other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than decimal
@@ -1024,7 +1026,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, decimal other) => x < (uint)other;
+    public static bool LessThan(this uint x, decimal other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than double
@@ -1032,7 +1034,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, double other) => x < (uint)other;
+    public static bool LessThan(this uint x, double other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than float
@@ -1040,7 +1042,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, float other) => x < (uint)other;
+    public static bool LessThan(this uint x, float other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than int
@@ -1048,7 +1050,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, int other) => x < (uint)other;
+    public static bool LessThan(this uint x, int other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than long
@@ -1056,7 +1058,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, long other) => x < (uint)other;
+    public static bool LessThan(this uint x, long other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than sbyte
@@ -1064,7 +1066,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, sbyte other) => x < (uint)other;
+    public static bool LessThan(this uint x, sbyte other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than short
@@ -1072,7 +1074,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, short other) => x < (uint)other;
+    public static bool LessThan(this uint x, short other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than uint
@@ -1080,7 +1082,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, uint other) => x < other;
+    public static bool LessThan(this uint x, uint other) => TypedMathCore.LessThan(x, other);
 
     /// <summary>
     /// Checks if uint is less than ulong
@@ -1088,7 +1090,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, ulong other) => x < (uint)other;
+    public static bool LessThan(this uint x, ulong other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Checks if uint is less than ushort
@@ -1096,7 +1098,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="other">The value to compare with</param>
     /// <returns>True if this value is less than the other value</returns>
-    public static bool LessThan(this uint x, ushort other) => x < (uint)other;
+    public static bool LessThan(this uint x, ushort other) => TypedMathCore.LessThanOther(x, other);
 
     /// <summary>
     /// Gets remainder of uint divided by byte
@@ -1104,7 +1106,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, byte divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, byte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by char
@@ -1112,7 +1114,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, char divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, char divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by decimal
@@ -1120,7 +1122,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, decimal divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, decimal divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by double
@@ -1128,7 +1130,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, double divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, double divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by float
@@ -1136,7 +1138,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, float divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, float divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by int
@@ -1144,7 +1146,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, int divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, int divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by long
@@ -1152,7 +1154,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, long divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, long divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by sbyte
@@ -1160,7 +1162,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, sbyte divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, sbyte divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by short
@@ -1168,7 +1170,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, short divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, short divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by uint
@@ -1176,7 +1178,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, uint divisor) => x % divisor;
+    public static uint Modulus(this uint x, uint divisor) => TypedMathCore.Modulus(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by ulong
@@ -1184,7 +1186,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, ulong divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, ulong divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Gets remainder of uint divided by ushort
@@ -1192,7 +1194,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="divisor">The divisor value</param>
     /// <returns>The remainder of the division</returns>
-    public static uint Modulus(this uint x, ushort divisor) => x % (uint)divisor;
+    public static uint Modulus(this uint x, ushort divisor) => TypedMathCore.ModulusOther(x, divisor);
 
     /// <summary>
     /// Multiplies uint with byte
@@ -1200,7 +1202,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, byte multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, byte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with char
@@ -1208,7 +1210,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, char multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, char multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with decimal
@@ -1216,7 +1218,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, decimal multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, decimal multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with double
@@ -1224,7 +1226,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, double multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, double multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with float
@@ -1232,7 +1234,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, float multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, float multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with int
@@ -1240,7 +1242,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, int multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, int multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with long
@@ -1248,7 +1250,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, long multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, long multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with sbyte
@@ -1256,7 +1258,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, sbyte multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, sbyte multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with short
@@ -1264,7 +1266,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, short multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, short multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with uint
@@ -1272,7 +1274,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, uint multiplier) => x * multiplier;
+    public static uint MultipliedWith(this uint x, uint multiplier) => TypedMathCore.MultipliedWith(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with ulong
@@ -1280,7 +1282,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, ulong multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, ulong multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Multiplies uint with ushort
@@ -1288,7 +1290,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="multiplier">The multiplier value</param>
     /// <returns>The result of the multiplication</returns>
-    public static uint MultipliedWith(this uint x, ushort multiplier) => x * (uint)multiplier;
+    public static uint MultipliedWith(this uint x, ushort multiplier) => TypedMathCore.MultipliedWithOther(x, multiplier);
 
     /// <summary>
     /// Calculates uint percent of byte
@@ -1296,7 +1298,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, byte number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, byte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of char
@@ -1304,7 +1306,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, char number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, char number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of decimal
@@ -1312,7 +1314,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, decimal number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, decimal number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of double
@@ -1320,7 +1322,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, double number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, double number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of float
@@ -1328,7 +1330,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, float number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, float number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of int
@@ -1336,7 +1338,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, int number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, int number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of long
@@ -1344,7 +1346,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, long number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, long number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of sbyte
@@ -1352,7 +1354,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, sbyte number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, sbyte number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of short
@@ -1360,7 +1362,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, short number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, short number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of uint
@@ -1368,7 +1370,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, uint number) => x / 100 * number;
+    public static uint PercentOf(this uint x, uint number) => TypedMathCore.PercentOf(x, number);
 
     /// <summary>
     /// Calculates uint percent of ulong
@@ -1376,7 +1378,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, ulong number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, ulong number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Calculates uint percent of ushort
@@ -1384,7 +1386,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="number">The value to calculate percentage of</param>
     /// <returns>The percentage of the value</returns>
-    public static uint PercentOf(this uint x, ushort number) => x / 100 * (uint)number;
+    public static uint PercentOf(this uint x, ushort number) => TypedMathCore.PercentOfOther(x, number);
 
     /// <summary>
     /// Subtracts byte from uint
@@ -1393,7 +1395,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, byte subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from uint
@@ -1402,7 +1404,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, char subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts decimal from uint
@@ -1411,7 +1413,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, decimal subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, decimal subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts double from uint
@@ -1420,7 +1422,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, double subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, double subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts float from uint
@@ -1429,7 +1431,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, float subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, float subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from uint
@@ -1438,7 +1440,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, int subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from uint
@@ -1447,7 +1449,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, long subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, long subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from uint
@@ -1456,7 +1458,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, sbyte subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from uint
@@ -1465,7 +1467,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, short subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from uint
@@ -1474,7 +1476,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, uint subtrahend) => x - subtrahend;
+    public static uint Substract(this uint x, uint subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from uint
@@ -1483,7 +1485,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, ulong subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from uint
@@ -1492,7 +1494,7 @@ public static class TypedMathUintExtension
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
-    public static uint Substract(this uint x, ushort subtrahend) => x - (uint)subtrahend;
+    public static uint Substract(this uint x, ushort subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1501,7 +1503,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, byte percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1510,7 +1512,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, char percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1519,7 +1521,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, decimal percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, decimal percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1528,7 +1530,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, double percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, double percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1537,7 +1539,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, float percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, float percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1546,7 +1548,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, int percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1555,7 +1557,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, long percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, long percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1564,7 +1566,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, sbyte percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1573,7 +1575,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, short percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1582,7 +1584,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, uint percent) => x - (x * percent / 100);
+    public static uint SubstractPercent(this uint x, uint percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1591,7 +1593,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, ulong percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage of uint
@@ -1600,7 +1602,7 @@ public static class TypedMathUintExtension
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
     [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
-    public static uint SubstractPercent(this uint x, ushort percent) => x - (x * (uint)percent / 100);
+    public static uint SubstractPercent(this uint x, ushort percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts byte from uint
@@ -1608,7 +1610,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, byte subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, byte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts char from uint
@@ -1616,7 +1618,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, char subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, char subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts decimal from uint
@@ -1624,7 +1626,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, decimal subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, decimal subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts double from uint
@@ -1632,7 +1634,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, double subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, double subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts float from uint
@@ -1640,7 +1642,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, float subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, float subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts int from uint
@@ -1648,7 +1650,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, int subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, int subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts long from uint
@@ -1656,7 +1658,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, long subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, long subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from uint
@@ -1664,7 +1666,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, sbyte subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, sbyte subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts short from uint
@@ -1672,7 +1674,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, short subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, short subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts uint from uint
@@ -1680,7 +1682,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, uint subtrahend) => x - subtrahend;
+    public static uint Subtract(this uint x, uint subtrahend) => TypedMathCore.Subtract(x, subtrahend);
 
     /// <summary>
     /// Subtracts ulong from uint
@@ -1688,7 +1690,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, ulong subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, ulong subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts ushort from uint
@@ -1696,7 +1698,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="subtrahend">The value to subtract</param>
     /// <returns>The difference between the values</returns>
-    public static uint Subtract(this uint x, ushort subtrahend) => x - (uint)subtrahend;
+    public static uint Subtract(this uint x, ushort subtrahend) => TypedMathCore.SubtractOther(x, subtrahend);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1704,7 +1706,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, byte percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, byte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1712,7 +1714,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, char percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, char percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1720,7 +1722,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, decimal percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, decimal percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1728,7 +1730,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, double percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, double percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1736,7 +1738,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, float percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, float percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1744,7 +1746,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, int percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, int percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1752,7 +1754,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, long percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, long percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1760,7 +1762,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, sbyte percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, sbyte percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1768,7 +1770,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, short percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, short percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1776,7 +1778,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, uint percent) => x - (x * percent / 100);
+    public static uint SubtractPercent(this uint x, uint percent) => TypedMathCore.SubtractPercent(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1784,7 +1786,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, ulong percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, ulong percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Subtracts percentage from uint
@@ -1792,7 +1794,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The original value</param>
     /// <param name="percent">The percentage to subtract</param>
     /// <returns>The value after subtracting the percentage</returns>
-    public static uint SubtractPercent(this uint x, ushort percent) => x - (x * (uint)percent / 100);
+    public static uint SubtractPercent(this uint x, ushort percent) => TypedMathCore.SubtractPercentOther(x, percent);
 
     /// <summary>
     /// Decreases all values in the array by the specified amount
@@ -1801,8 +1803,7 @@ public static class TypedMathUintExtension
     /// <param name="dec">The amount to subtract</param>
     /// <returns>Array with all values decreased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static uint[] DecreaseAllValuesWith(this uint[] array, uint dec) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.DecreaseAllValuesWith(array, dec);
+    public static uint[] DecreaseAllValuesWith(this uint[] array, uint dec) => TypedMathCore.DecreaseAllValuesWith(array, dec);
 
     /// <summary>
     /// Peeks the average value of the numbers in the array
@@ -1810,8 +1811,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The average value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetAverage(). This method will be removed in v2.0.", false)]
-    public static double GetAverage(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetAverage(array);
+    public static double GetAverage(this uint[] array) => TypedMathCore.GetAverage(array);
 
     /// <summary>
     /// Gets the first half of the array
@@ -1819,8 +1819,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The first half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
-    public static uint[] GetFirstHalf(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstHalf(array);
+    public static uint[] GetFirstHalf(this uint[] array) => TypedMathCore.GetFirstHalf(array);
 
     /// <summary>
     /// Gets the first value in the array
@@ -1828,8 +1827,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The first value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
-    public static uint GetFirstValue(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstValue(array);
+    public static uint GetFirstValue(this uint[] array) => TypedMathCore.GetFirstValue(array);
 
     /// <summary>
     /// Gets the highest value in the array
@@ -1837,8 +1835,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The highest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
-    public static uint GetHighestValue(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetHighestValue(array);
+    public static uint GetHighestValue(this uint[] array) => TypedMathCore.GetHighestValue(array);
 
     /// <summary>
     /// Gets the last half of the array
@@ -1846,8 +1843,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The last half of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
-    public static uint[] GetLastHalf(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastHalf(array);
+    public static uint[] GetLastHalf(this uint[] array) => TypedMathCore.GetLastHalf(array);
 
     /// <summary>
     /// Gets the last value in the array
@@ -1855,8 +1851,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The last value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastValue(). This method will be removed in v2.0.", false)]
-    public static uint GetLastValue(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastValue(array);
+    public static uint GetLastValue(this uint[] array) => TypedMathCore.GetLastValue(array);
 
     /// <summary>
     /// Gets the lowest value in the array
@@ -1864,8 +1859,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The lowest value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
-    public static uint GetLowestValue(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLowestValue(array);
+    public static uint GetLowestValue(this uint[] array) => TypedMathCore.GetLowestValue(array);
 
     /// <summary>
     /// Gets the middle portion of the array
@@ -1873,8 +1867,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The middle portion of the array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddle(). This method will be removed in v2.0.", false)]
-    public static uint[] GetMiddle(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddle(array);
+    public static uint[] GetMiddle(this uint[] array) => TypedMathCore.GetMiddle(array);
 
     /// <summary>
     /// Gets the middle value in the array
@@ -1882,8 +1875,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The middle value</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
-    public static uint GetMiddleValue(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddleValue(array);
+    public static uint GetMiddleValue(this uint[] array) => TypedMathCore.GetMiddleValue(array);
 
     /// <summary>
     /// Gets all values higher than or equal to the specified value
@@ -1892,8 +1884,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values higher than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
-    public static uint[] GetValuesHigherThan(this uint[] array, uint x) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesHigherThan(array, x);
+    public static uint[] GetValuesHigherThan(this uint[] array, uint x) => TypedMathCore.GetValuesHigherThan(array, x);
 
     /// <summary>
     /// Gets all values lower than or equal to the specified value
@@ -1902,8 +1893,7 @@ public static class TypedMathUintExtension
     /// <param name="x">The threshold value</param>
     /// <returns>Array of values lower than or equal to threshold</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
-    public static uint[] GetValuesLowerThan(this uint[] array, uint x) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesLowerThan(array, x);
+    public static uint[] GetValuesLowerThan(this uint[] array, uint x) => TypedMathCore.GetValuesLowerThan(array, x);
 
     /// <summary>
     /// Increases all values in the array by the specified amount
@@ -1912,8 +1902,7 @@ public static class TypedMathUintExtension
     /// <param name="add">The amount to add</param>
     /// <returns>Array with all values increased</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
-    public static uint[] IncreaseAllValuesWith(this uint[] array, uint add) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.IncreaseAllValuesWith(array, add);
+    public static uint[] IncreaseAllValuesWith(this uint[] array, uint add) => TypedMathCore.IncreaseAllValuesWith(array, add);
 
     /// <summary>
     /// Rotates the numbers to the left
@@ -1921,8 +1910,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateLeft(). This method will be removed in v2.0.", false)]
-    public static uint[] RotateLeft(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateLeft(array);
+    public static uint[] RotateLeft(this uint[] array) => TypedMathCore.RotateLeft(array);
 
     /// <summary>
     /// Rotates the numbers to the right
@@ -1930,8 +1918,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The rotated array</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateRight(). This method will be removed in v2.0.", false)]
-    public static uint[] RotateRight(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateRight(array);
+    public static uint[] RotateRight(this uint[] array) => TypedMathCore.RotateRight(array);
 
     /// <summary>
     /// Sets a new size for the array
@@ -1940,8 +1927,7 @@ public static class TypedMathUintExtension
     /// <param name="size">The new size</param>
     /// <returns>Array with new size</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
-    public static uint[] SetNewArraySize(this uint[] array, int size) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SetNewArraySize(array, size);
+    public static uint[] SetNewArraySize(this uint[] array, int size) => TypedMathCore.SetNewArraySize(array, size);
 
     /// <summary>
     /// Sorts the array in ascending order
@@ -1949,8 +1935,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in ascending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
-    public static uint[] SortArrayAsc(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayAsc(array);
+    public static uint[] SortArrayAsc(this uint[] array) => TypedMathCore.SortArrayAsc(array);
 
     /// <summary>
     /// Sorts the array in descending order
@@ -1958,8 +1943,7 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>Array sorted in descending order</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
-    public static uint[] SortArrayDesc(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayDesc(array);
+    public static uint[] SortArrayDesc(this uint[] array) => TypedMathCore.SortArrayDesc(array);
 
     /// <summary>
     /// Sums all values in the array
@@ -1967,6 +1951,5 @@ public static class TypedMathUintExtension
     /// <param name="array">The array</param>
     /// <returns>The sum of all values</returns>
     [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SumAllValues(). This method will be removed in v2.0.", false)]
-    public static uint SumAllValues(this uint[] array) =>
-        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SumAllValues(array);
+    public static uint SumAllValues(this uint[] array) => TypedMathCore.SumAllValues(array);
 }

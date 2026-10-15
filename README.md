@@ -5,13 +5,18 @@
 [![C#](https://img.shields.io/badge/C%23-14.0-239120?style=for-the-badge&logo=csharp&logoColor=white)](#)
 [![.NET](https://img.shields.io/badge/.NET-10.0+-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-![Open Source](https://raw.githubusercontent.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/main/assets/open-source.svg)
+[![Open Source](https://raw.githubusercontent.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/main/assets/open-source.svg)](https://opensource.org)
 [![Build](https://img.shields.io/github/actions/workflow/status/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/release.yml?branch=main&label=Build&style=for-the-badge&logo=github)](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/actions)
 [![Signed](https://img.shields.io/badge/Signed-Sigstore-green?style=for-the-badge&logo=linux)](https://docs.sigstore.dev)
+[![Wiki](https://img.shields.io/badge/docs-wiki-blue?style=for-the-badge&logo=github)](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/wiki)
 
 
 
 **Type-safe mathematical operations in C# with compile-time guarantees**
+
+> This one comes from 2011, a period when a lot of things in my life — work and home — were going wrong at once. I noticed letters and numbers had started swapping places or seeming to dance on the line, and realised the stress had brought on a mild touch of what's usually called dyslexia. That got me thinking about what it's like for people who deal with that regularly — I researched bionic reading, and stumbled onto dyscalculia along the way. So I decided to turn maths, which I love, into more of a text-based, step-by-step form, to take the pressure off writing long calculations crammed onto a single line. I remembered doing electrical drawings from code once — working out placements on an A4 page — and how breaking those calculations into named, reusable methods, instead of cramming them into one spot, was what made that kind of coding possible again when the stress had made it genuinely hard. The stress eventually settled, and after a few years I was back to programming as usual — but this library is what came out of that stretch.
+>
+> In this case, I wanted every calculation to be able to stand on its own line, named and reusable, rather than buried inside a longer expression.
 
 Build mathematical expressions with strong typing to prevent unit mismatches and ensure correctness at compile time.
 
@@ -39,7 +44,7 @@ dotnet add package MarcusMedina.Fluent.TypedMath
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/blob/main/LICENSE) file for details.
 
 **Version:** 0.2.0 | **Updated:** 2025-03-16
 
@@ -47,7 +52,7 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 All releases are signed with [cosign](https://docs.sigstore.dev) (Sigstore keyless signing).
 
-To verify a downloaded package, download both the `.nupkg` and its `.sigstore.json` bundle from the [GitHub Release](../https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/releases), then run:
+To verify a downloaded package, download both the `.nupkg` and its `.sigstore.json` bundle from the [GitHub Release](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.TypedMath/releases), then run:
 
 ```bash
 cosign verify-blob <package.nupkg> \
@@ -63,7 +68,7 @@ Expected output: `Verified OK`
 
 This library was written by **Marcus Medina** together with **Claude Code** (Anthropic) — not through "vibe coding" where you just describe and accept, but through genuine collaboration: planning together, reviewing each other's decisions, pushing back when something felt wrong, and iterating until the result felt right.
 
-The goal was always to write code worth reading — the kind a student can open, understand, and learn from. AI was a partner in that process, not a shortcut around it.
+The goal was always to write code worth reading and code worth using — the kind a student can open, understand, and learn from, and the kind any programmer can drop into real, professional work without wanting to rewrite it from scratch. AI was a partner in that process, not a shortcut around it.
 
 If you're curious about this way of working, the source code and git history are open. Every decision has a reason behind it.
 

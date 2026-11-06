@@ -33,7 +33,7 @@ When using TypedMath in your projects:
 
 ### For Library Users
 - ✅ Keep dependencies updated (`dotnet list package --outdated`)
-- ✅ Use latest .NET 8 runtime with security patches
+- ✅ Use latest .NET 10 runtime with security patches
 - ✅ Follow secure coding practices in your implementations
 - ✅ Validate all user inputs before mathematical operations
 - ✅ Be aware of potential overflow/underflow in calculations

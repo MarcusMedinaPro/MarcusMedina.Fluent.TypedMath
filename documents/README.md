@@ -52,7 +52,7 @@ var finalScore = baseScore
 
 ## Requirements
 
-- .NET 8.0 or higher
+- .NET 10.0 or higher
 
 ## Installation
 
